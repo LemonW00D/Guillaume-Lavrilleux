@@ -1,0 +1,65 @@
+#about{
+    padding: 0;
+
+    h2{
+        font-size: 4.5rem;
+    }
+
+    .coach-img{
+        width: 75%;
+        margin-top: 2.5rem;
+        height: auto;
+        box-shadow: 0 .5rem 1rem rgba(255, 255, 255, 0.25)!important;
+    }
+
+    .coach-desc{
+        background-color: #F3F2EF;
+        border-radius: 5px;
+        box-shadow: 0 .5rem 1rem rgba(255, 255, 255, 0.25)!important;
+        margin: 2rem;
+
+        .title-part{
+            font-size: 2.75rem;
+            font-weight: 900;
+            color: black;
+        }
+        h3{
+            font-size: 2rem;
+            text-align: center;
+            color: black;
+        }
+        h4{
+            font-size: 2rem;
+            font-style: italic;
+            color: black;
+        }
+        li{
+            font-size: 1.8rem;
+            list-style: inside square;
+            padding-left: 2rem;
+            color: black;
+        }
+        a{
+            font-size: 1.8rem;
+            color: black;
+        }
+    }
+
+   
+
+    @include xs {
+        
+    }
+
+    @include md{
+        .md-column{
+            flex-direction: column;
+        }
+    }
+
+    @include xl{
+        .coach-img{
+            width: 60%;
+        }
+    }
+}

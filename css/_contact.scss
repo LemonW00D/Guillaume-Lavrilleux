@@ -1,0 +1,205 @@
+#contact{
+    .title-part{
+        font-size: 2.75rem;
+        font-weight: 900;
+        font-family: 'Nixie One', cursive;
+    }   
+
+    .under-txt{
+        font-size: 1.7rem;
+    }
+
+    .item{
+        margin: auto;
+        width: 212px;
+    }
+
+    .contact-link {
+        text-align: center;
+        margin-top: 2rem;
+        margin-bottom: 10rem;
+        padding-top: 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+      
+    h3 {
+        font-size: 2.1rem;
+        cursor: default;
+        margin-bottom: 2rem;
+        i{
+            color: $violet;
+        }
+    }
+      
+    a {
+        text-decoration: none;
+        text-align: center;
+        color: black;
+        font-size: 1.8rem;
+        cursor: pointer;
+        &:hover {
+          color: black;
+        }
+    }
+
+    .tel, .mail{
+        user-select: all;
+    }
+      
+    .fab {
+        font-size: 3rem;
+    }
+      
+    .fa-facebook {
+        &:hover {
+          color: #0b84ed;
+        }
+    }
+      
+    .fa-instagram {
+        border-radius: 7.5px;
+        display: inline-block;
+        &:hover {
+          background: radial-gradient(
+            circle at 30% 107%,
+            #fdf497 0%,
+            #fdf497 5%,
+            #fd5949 45%,
+            #d6249f 60%,
+            #285aeb 90%
+          );
+          background-clip: text !important;
+          -webkit-text-fill-color: #FEF7F1;
+        }
+    }
+      
+    @include sm {
+        .contact-link {
+          flex-direction: column;
+          margin-top: 0.5rem;
+          margin-bottom: 5rem;
+        }
+        .item {
+          margin-top: 2.5rem;
+
+          a{
+              margin-bottom: 2rem;
+          }
+        }
+    }
+
+    .contact-form{
+        .input-group-text{
+            background-color: $violet;
+        }
+
+        input, textarea{            
+            font-size: 1.6rem;
+            
+            &:hover{
+                cursor: text;
+            }
+
+            &::placeholder{
+                font-size: 1.5rem;
+                font-weight: 400;
+            }
+        }
+
+        span{
+            width: 3.75rem;
+
+            i{
+                color: white;
+                font-size: 2rem;
+                margin: auto;
+            }
+        }
+
+        input{
+            height: 3.8rem;
+            left: -1px;
+        }
+
+        .bouton-contact{
+            margin-top: 1.5rem;
+            text-align: center;
+
+            button{
+                width: 160px;
+                height: 42px;
+            }
+
+            .btn{
+                font-size: 2rem;
+                padding: 1rem 0.75rem;
+                width: 200px;
+                background-color: $rouge;
+                border: 1px solid white;
+                letter-spacing: 0.1em;
+                cursor: pointer;
+                font-weight: 400;
+                line-height: 45px;
+                max-width: 160px;
+                position: relative;
+                text-decoration: none;
+                text-transform: uppercase;
+                --uismLinkDisplay: var(--smLinkDisplay, inline-flex);
+                display: var(--uismLinkDisplay);
+                color: #000;
+                outline: solid  2px #000;
+                transition-duration: 0.4s;
+                overflow: hidden;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+            
+            i{
+                border: none;
+            }     
+
+            .btn::before,
+            .btn i{
+                margin: 0 auto;
+                transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+                transition-duration: 0.4s;
+            }
+              
+            
+            .btn:hover{              
+                background-color: #fff;
+            }
+              
+            .btn:hover i{
+                -webkit-transform: translateY(-400%) scale(-0.1,20);
+                        transform: translateY(-400%) scale(-0.1,20);
+                        display: none;
+            }
+              
+            .btn::before{
+                content: "SEND";
+                    color: $bleu;
+                font-weight: 800;
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                -webkit-transform: translateY(500%) scale(-0.1,20);
+                        transform: translateY(500%) scale(-0.1,20);
+            }
+              
+            
+            .btn:hover::before{
+                letter-spacing: 0.05em;
+                -webkit-transform: translateY(0) scale(1,1);
+                        transform: translateY(0) scale(1,1);
+            }
+        }
+    }
+}

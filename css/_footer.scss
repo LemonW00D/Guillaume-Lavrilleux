@@ -1,0 +1,60 @@
+footer{
+    .text-muted{
+        color: $gris !important;
+    }
+
+    .kirola{
+        font-weight: 900;
+        text-transform: uppercase;
+        color: black;
+        font-family: 'Nixie One', cursive;
+    }
+
+    .kirola-footer-img{
+        height: 95px;
+        width: auto;
+    }
+
+    @include md{
+        .text-left{
+            padding-left: 0;
+
+            li{
+                text-align: center;
+            }
+        }
+    }
+
+    @include xs{
+        .fas {
+            display: none;
+        }
+    }
+}
+
+.copyright{
+    margin-top: 3rem;
+    
+    p{
+        text-align: center;
+        margin: 0;
+        font-size: 1.1rem;
+        color: $gris;
+    }
+
+    .dev{
+        font-size: 1.1rem;
+        color: black;
+
+        &:hover{
+        text-decoration: underline;
+        font-weight: bold;
+        }
+    }
+
+    .dev-img{
+        height: 20px;
+        border-radius: 10%;
+        margin-left: 0.5rem;
+    }
+}

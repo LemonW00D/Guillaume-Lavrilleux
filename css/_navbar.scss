@@ -1,0 +1,187 @@
+@import url("https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css");
+
+@font-face {
+	font-family: 'Valorant';
+	src: url('../font/Valorant\ Font.ttf')  format('truetype');
+}
+
+nav {
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  transition: background 0.1s;
+  border: 1px solid #353535;
+  box-shadow: 2px 2px 2px rgba(199, 199, 199, 0.05);
+  z-index: 9999;
+}
+
+.nav-scroll-active{
+  background-color: #242526 !important;
+}
+
+.topnav {
+  border: none;
+  transition: background 0.1s;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-collapse {
+  background-color: transparent;
+  transition: background 0.1s;
+  overflow-x: hidden;
+}
+
+.img-nav{
+  height: 70px;
+  width: auto;
+  padding: 2px;
+}
+
+.container-fluid{
+  padding: 1rem 0;
+  .navbar-brand {  
+    font-size: 2.9rem;
+    color: white;
+    font-weight: 900;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: capitalize;
+  }
+}
+
+.nav-item{  
+  border-bottom: 2.5px solid transparent;
+  padding: 1rem 2rem;
+  cursor: pointer;
+
+  &:hover{
+    color: white;
+  }
+
+  a{
+    color: #BBBBBB;
+    font-size: 2rem;
+    font-family: 'Valorant';
+
+    &:hover, &:focus {
+      color: white;
+    }
+  }
+}
+
+.nav-link{
+  border-bottom: 2.5px solid transparent;
+  margin-top: 1rem;
+  padding: 1rem 2rem;
+  cursor: pointer;
+
+  &:hover, &:focus {
+    background-color: rgba(32, 133, 252, 0.25);
+    border-bottom: 2.5px solid rgba(32, 133, 252, 1);
+    color: white;
+  }
+  
+  &:focus {
+    border-bottom: 2.5px solid rgba(32, 133, 252, 0.7);
+  }
+}
+
+.active{
+  color: white !important;
+  font-weight: 700;
+
+  &::after{
+    margin-top: 5px !important;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    display: block;
+    height: 2px;
+    background: white;
+    width: 20px;
+    margin: 0 auto;
+    content: "";
+  }
+}
+
+.navbar-default .navbar-nav li:focus {
+  color: rgba(32, 133, 252, 1);
+  transition: color .3s;
+}
+
+.navbar-toggler{
+  i{
+    font-size: 2.5rem;
+    color: #000;
+  }
+}
+
+
+@include xl {
+  .container-fluid{
+    .navbar-brand {  
+      font-size: 2.25rem;
+    }
+  }
+  .nav-item{
+    font-size: 1.7rem;
+  }
+}
+
+@include md {
+  .topnav{
+    background-color: #F0F2F5 !important;
+  }
+  .navbar-collapse{
+    background-color: #F0F2F5 !important;
+  }
+  .nav-item{  
+    padding: 0;
+  }
+  .nav-link{
+    margin: 0;
+  }
+  .active{
+    color: black !important;
+    font-weight: 700;
+  
+    &::after{
+      margin-top: 5px !important;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      display: block;
+      height: 2px;
+      background: black;
+      width: 20px;
+      margin: 0 auto;
+      content: "";
+    }
+  }
+}
+
+@include sm {
+ 
+}
+
+@include xs {
+  .container-fluid{
+    .navbar-brand{
+      font-size: 1.8rem;
+      padding-top: 0.6rem;
+    }
+  }
+  .navbar-toggler{
+    i{
+      font-size: 1.8rem;
+    }
+  }
+  .img-nav{
+    height: 50px;
+    width: auto;
+    background: #F0F2F5;
+    padding: 2px;
+  }
+}
