@@ -1,0 +1,96 @@
+#wavebg1, #wavebg2, #wavebg3 {
+    height: 400px !important;
+
+    canvas {
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 400px !important;
+    }
+}
+
+/* Content */
+.content {
+	position: relative;
+	padding: 0;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.content--highlight {
+	padding: 0;
+	background: transparent;
+}
+
+/* Flexbox helper classes */
+.flexy {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.flexy--center {
+	justify-content: center;
+}
+
+@media screen and (max-width: 50em) {
+	.content--highlight {
+		min-height: 0;
+		padding: 2em;
+    }
+}
+
+@media screen and (max-width: 40em) {
+    #wavebg1, #wavebg2, #wavebg3{
+        canvas {
+            opacity: 0.65;
+        }
+    }
+}
+
+@include xl{
+    .coach-img{
+        width: 60%;
+    }
+}
+
+@include md{
+    .md-column{
+        flex-direction: column;
+    }
+    #wavebg1, #wavebg2, #wavebg3{
+        canvas {
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 400px !important;
+        }
+    }   
+}
+
+@include sm {
+    #wavebg1, #wavebg2, #wavebg3{
+        canvas {
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 400px !important;
+        }
+    }    
+}
+
+@include xs {
+    #wavebg1, #wavebg2, #wavebg3{
+        height: 300px !important;
+
+        canvas {
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 300px !important;
+        }  
+    }
+}

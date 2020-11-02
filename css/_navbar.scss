@@ -10,8 +10,6 @@ nav {
   margin: 0;
   background-color: transparent;
   transition: background 0.1s;
-  border: 1px solid #353535;
-  box-shadow: 2px 2px 2px rgba(199, 199, 199, 0.05);
   z-index: 9999;
 }
 
@@ -36,16 +34,21 @@ nav {
   height: 70px;
   width: auto;
   padding: 2px;
+  background-color: transparent;
+}
+
+.img-nav-mobile{
+  height: 70px;
+  width: auto;
+  padding: 2px;
+  background-color: transparent;
 }
 
 .container-fluid{
   padding: 1rem 0;
-  .navbar-brand {  
-    font-size: 2.9rem;
-    color: white;
-    font-weight: 900;
-    font-family: 'Montserrat', sans-serif;
-    text-transform: capitalize;
+  
+  .mobile{
+    display: none;
   }
 }
 
@@ -53,19 +56,55 @@ nav {
   border-bottom: 2.5px solid transparent;
   padding: 1rem 2rem;
   cursor: pointer;
+  width: 130px;
+  height: 82px;
+  text-align: center;
+  margin: 0 2.5rem;
 
   &:hover{
     color: white;
   }
 
-  a{
+  .nav-link{
     color: #BBBBBB;
+    font-weight: 700;
     font-size: 2rem;
     font-family: 'Valorant';
+    position: relative;
+    text-align: center;
+    width: 130px;
+    height: 49.5px;
 
     &:hover, &:focus {
       color: white;
+      font-weight: 900;
     }
+
+    &:hover { 
+      
+      rect {
+          stroke-width: 7.5;
+          stroke-dashoffset: 60;
+          stroke-dasharray: 40, 150;
+          transition: all 1.15s cubic-bezier(0.19, 1, 0.22, 1);
+          stroke: $rouge;
+      }
+    }
+  
+    svg {
+        height: 60px;
+        left: -5px;
+        position: absolute;
+        top: -10px; 
+        width: 140px; 
+    }
+    
+    rect {
+        fill: none;
+        stroke-width: 2;
+        stroke-dasharray: 490, 0;
+        transition: all 0.35s linear;
+    }        
   }
 }
 
@@ -74,34 +113,31 @@ nav {
   margin-top: 1rem;
   padding: 1rem 2rem;
   cursor: pointer;
+  text-align: center;
 
   &:hover, &:focus {
-    background-color: rgba(32, 133, 252, 0.25);
-    border-bottom: 2.5px solid rgba(32, 133, 252, 1);
     color: white;
-  }
-  
-  &:focus {
-    border-bottom: 2.5px solid rgba(32, 133, 252, 0.7);
   }
 }
 
-.active{
-  color: white !important;
-  font-weight: 700;
+#navbar-spy{
+  .active{
+    color: white !important;
+    font-weight: 700;
 
-  &::after{
-    margin-top: 5px !important;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    display: block;
-    height: 2px;
-    background: white;
-    width: 20px;
-    margin: 0 auto;
-    content: "";
+    &::after{
+      margin-top: 5px !important;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      display: block;
+      height: 2px;
+      background: white;
+      width: 20px;
+      margin: 0 auto;
+      content: "";
+    }
   }
 }
 
@@ -130,6 +166,12 @@ nav {
 }
 
 @include md {
+  .computer{
+    display: none;
+  }
+  .mobile{
+    display: block !important;
+  }
   .topnav{
     background-color: #F0F2F5 !important;
   }
@@ -138,26 +180,38 @@ nav {
   }
   .nav-item{  
     padding: 0;
+    height: 50px;
+    &:hover, &:focus{
+      color: black !important;
+    }
+  }
+  svg{
+    display: none;
   }
   .nav-link{
     margin: 0;
+    &:hover, &:focus{
+      color: black !important;
+    }
   }
-  .active{
-    color: black !important;
-    font-weight: 700;
-  
-    &::after{
-      margin-top: 5px !important;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      margin: 0 auto;
-      display: block;
-      height: 2px;
-      background: black;
-      width: 20px;
-      margin: 0 auto;
-      content: "";
+  #navbar-spy{
+    .active{
+      color: black !important;
+      font-weight: 700;
+    
+      &::after{
+        margin-top: 5px !important;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        display: block;
+        height: 2px;
+        background: black;
+        width: 20px;
+        margin: 0 auto;
+        content: "";
+      }
     }
   }
 }

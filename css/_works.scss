@@ -1,0 +1,129 @@
+#works{
+
+    h2{
+        font-size: 4.5rem;
+    }
+
+    .carousel-block{
+        max-width: 66%;
+        margin: 5rem auto;
+    }
+
+    #carouselWorks{
+        background-color: #F1ECE6;
+        border-radius: 5px;
+        box-shadow: 0 .5rem 1rem rgba(255, 255, 255, 0.25)!important;
+
+        .carousel-indicators{
+            li{
+                display: block;
+                padding: 0;
+                width: 1rem;
+                height: 1rem;
+                background-color: #ababab;
+                cursor: pointer;
+                border: 1.5px black solid;
+                margin: 0 0.75rem 0.5rem;
+            }
+            .active{
+                background-color: $bleu;
+            }
+        }
+
+        .carousel-item{
+            img{
+                border-radius: 5px 0 0 5px;
+                max-height: 501px;
+                max-width: auto;
+            }
+
+            .carousel-caption{
+                h5{
+                    color: black;
+                }
+                p{
+                    color: black;
+                }
+            }
+        }
+
+
+        .carousel-inner{
+            height: 500px;
+        }
+
+        .carousel-control-prev{
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-end;
+            margin-bottom: 10rem;
+
+            span{
+                margin: 2rem;
+                border-radius: 50%;
+                i{                    
+                    font-size: 4rem;
+                    color: $rouge;
+                    left: 3rem;
+                    border: 1px solid transparent;
+                    border-radius: 50%;
+                    padding: 0.5rem;
+
+                    &:hover{
+                        border: 1px solid $rouge;
+                    }
+                }
+            }
+        }
+
+        .carousel-control-next{
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            margin-bottom: 10rem;
+
+            span{
+                margin: 2rem;
+                border-radius: 50%;
+                i{                    
+                    font-size: 4rem;
+                    color: $rouge;
+                    left: 3rem;
+                    border: 1px solid transparent;
+                    border-radius: 50%;
+                    padding: 0.5rem;
+
+                    &:hover{
+                        border: 1px solid $rouge;
+                    }
+                }
+            }
+        }
+    }
+
+    .browser {
+        margin: 0 auto;
+        padding-top: 8%;
+        min-height: 400px;
+        max-width: 1400px;
+        width: 100%;
+        border-radius: 8px;
+        background: #fff url(../img/logo-AT.png) no-repeat 50% 0;
+        background-size: 100%;
+        color: #d3d3d3;
+    }
+
+    .box {
+        float: left;
+        padding: 3.5em;
+        width: 33.3%;
+        font-size: 0.7em;
+        line-height: 1.5;
+    }
+}
+
+@media screen and (max-width: 45em) {
+	.box {
+		width: 100%;
+	}
+}

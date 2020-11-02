@@ -5,7 +5,7 @@
 	<!-- Meta -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-compatible" content="IE=edge, chrome=1">
-    <meta name="viewport" content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport'/>
+    <meta name="viewport" content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no' name='viewport'/>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="copyright" content="Guillaume Lavrilleux, http://www.guillaume-lavrilleux.com/">
     <meta name="geo.placename" content="Bordeaux, Gironde">    
@@ -45,16 +45,17 @@
 	<!-- NAVBAR -->
 	<nav class="topnav navbar navbar-expand-lg fixed-top p-0" id="navbar-spy">
 		<div class="container-fluid p-0">
-			<a class="navbar-brand mb-0 h1" href="#home"><img src="./img/logo-AT.png" class="mx-4 img-nav"></a>
+			<a class="navbar-brand mb-0 h1 computer" href="#home"><img src="./img/logo-GL-nav2.png" alt="logo Guillaume Lavrilleux" class="mx-4 img-nav"></a>
+			<a class="navbar-brand mb-0 h1 mobile" href="#home"><img src="./img/logo-GL.png" alt="logo Guillaume Lavrilleux" class="mx-4 img-nav-mobile"></a>
 			<button class="navbar-toggler collapsed px-4 pb-2" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
 				<i class="fas fa-bars"></i>
 			</button>
 			<div class="navbar-collapse collapse" id="navbarColor02" >
 				<ul class="navbar-nav mr-auto mx-auto d-flex justify-content-center align-items-center">
-					<li class="nav-item home-nav"><a class="nav-link" href="#home">Home</a></li>
-					<li class="nav-item about-nav"><a class="nav-link" href="#about">About</a></li>
-					<li class="nav-item portfolio-nav"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-					<li class="nav-item contact-nav"><a class="nav-link" href="#contact">Contact</a></li>
+					<li class="nav-item home-nav"><a class="nav-link" href="#home"><svg><rect x="0" y="0" fill="none" width="100%" height="100%"/></svg>Home</a></li>
+					<li class="nav-item about-nav"><a class="nav-link" href="#about"><svg><rect x="0" y="0" fill="none" width="100%" height="100%"/></svg>About</a></li>
+					<li class="nav-item works-nav"><a class="nav-link" href="#works"><svg><rect x="0" y="0" fill="none" width="100%" height="100%"/></svg>Works</a></li>
+					<li class="nav-item contact-nav"><a class="nav-link" href="#contact"><svg><rect x="0" y="0" fill="none" width="100%" height="100%"/></svg>Contact</a></li>
 				</ul>
 			</div>
 		</div>
@@ -71,9 +72,9 @@
 		<!-- PRELOADER -->
 		<header class="ip-header">
 			<div class="ip-logo" id="preload">
-				<img src="./img/logo-AT.png" alt="" style="max-width: 150px;">
+				<img src="./img/logo-GL.png" alt="logo Guillaume Lavrilleux" style="max-width: 250px;">
 				<h1>GUILLAUME<br>LAVRILLEUX</h1>
-				<h3>AUDIO <strong>DESIGNER</strong></h3>
+				<h3>SOUND <strong>DESIGNER</strong></h3>
 				<audio autoplay="true" preload="auto">
 					<source src="./sound/02 - The Dark Side.mp3" type="audio/mpeg" >
 				</audio>				  
@@ -90,16 +91,15 @@
 		
 		<!-- HOME -->
 		<section id="home">
-			<section id="wavebg" class="content content--highlight flexy flexy--center">
 			<div class="home-box">
 				<div class="title">
-					<h2><span>G</span>uillaume <span>L</span>avrilleux</h2>
+					<h2>Guillaume Lavrilleux</h2>
 					<div class="divider"></div>
 					<div class="description">
-						<p>I'm a freelance composer and sound designer for video games and other media.</p>
+						<p>I'm a freelance sound designer for video games and other media.</p>
 					</div>
 					<div class="button-contact">
-						<a href="#contact" class="">
+						<a href="#contact">
 							<p>
       							<span class="bg"></span>
       							<span class="base"></span>
@@ -109,6 +109,7 @@
 					</div>
 				</div>
 				<div class="video">
+					<h2>Demo Reel</h2>
 					<video controls controlsList="nodownload" disablePictureInPicture width="900px">				
 						<source src="./video/Guillaume Lavrilleux - Demo Reel 2020 - Sound ReDesign.mp4"
 								type="video/mp4">
@@ -118,17 +119,21 @@
 				</div>
 			</div>
 		</section>
-		</section>
 		<!-- END HOME -->
 
+		
+		<!-- SOUNDWAVE -->
+		<section id="wavebg1" class="content content--highlight flexy flexy--center"></section>
+		<!-- END SOUNDWAVE-->
 
+		
 		<!-- SOCIAL NETWORK -->
 		<aside id="social"> 
 			<div class="social">
 				<ul>
-					<li class="twitter"><a href="https://twitter.com/GLavrilleux">Twitter <i class="fa fa-twitter"></i></a></li>
-					<li class="gafr"><a href="https://www.facebook.com/GameAudioFrance/">Facebook <i class="fab fa-facebook-f"></i></a></li>
-					<li class="linkedin"><a href="https://www.linkedin.com/in/teonamushambadze">Linkedin <i class="fa fa-linkedin"></i></a></li>
+					<li><a href="https://twitter.com/GLavrilleux" target="_blank">Twitter <i class="fa fa-twitter"></i></a></li>
+					<li><a href="https://fr.linkedin.com/in/guillaumelavrilleux" target="_blank">Linkedin <i class="fa fa-linkedin"></i></a></li>
+					<li><a href="https://vimeo.com/lavrilleuxguillaume" target="_blank">Vimeo <i class="fab fa-vimeo-v"></i></a></li>
 				</ul>
 			</div>
 		</aside>
@@ -141,32 +146,38 @@
 			<div class="row gap-y mb-5" >
 				<div class="d-flex justify-content-center align-items-center w-100 md-column">
 					<div class="col-xl-4 d-flex justify-content-center align-items-center" data-aos="flip-left">
-						<img class="d-block coach-img m-auto" src="./img/portrait-hugo.jpg" alt="Coach">
+						<img class="d-block coach-img m-auto" src="./img/home-portrait-arnaud-tessier.jpg" alt="Photo de Guillaume Lavrilleux">
 					</div>
 					<div class="col-xl-6 d-flex justify-content-center align-items-center m-4" data-aos="fade-up-left" data-aos-duration="1500">
 						<div class="d-block coach-desc p-5">
-							<h2 class="title-part">Hugo GARCIA</h2>
-							<br><br><br>
-							<h3>Coach sportif</h3>
-							<h3>Scientifique du sport et de la santé (sociologie, biologie, psychologie)</h3>
-							<br><br><br>
-							<h4>Compétences</h4>
+							<h2 class="title-part">Guillaume LAVRILLEUX</h2>
+							<br><br>
+							<h3>Sound Designer</h3>
+							<h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, corporis.</h3>
+							<br><br>
+							<h4>lorem</h4>
 							<ul>
-								<li>Coach sportif tous publics, spécialiste de l'activité physique chez les seniors et les juniors</li>
-								<li>Sociologue du sport et de la santé, spécialiste des maladies chroniques et du vieillissement</li>
+								<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio culpa eius quibusdam aspernatur quidem accusamus?</li>
+								<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio fuga molestias explicabo et autem pariatur!</li>
 							</ul>
 							<br>
-							<h4>Diplômes</h4>
+							<h4>lorem</h4>
 							<ul>
-								<li>Master STAPS (Sciences et Techniques des Activités Physiques et Sportives)</li>
-								<li>Titulaire d'une carte professionnelle d'éducateur sportif (ministère des sports, n° <a href="http://eapspublic.sports.gouv.fr/CartePro/Educateur/07219ED0064/26061992" target="_blank">07219ED0064</a>)</li>
+								<li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias veritatis eos adipisci cum ducimus optio!</li>
+								<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nobis excepturi tempore est ipsum cum.</li>
 							</ul>
 							<br>
-							<h4>Sport</h4>
+							<h4>lorem</h4>
 							<ul>
-								<li>Ancien tennisman et danseur de haut niveau</li>
-								<li>Sportif polyvalent</li>
+								<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, harum.</li>
+								<li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, fugit!</li>
 							</ul>
+							<br>
+							<div class="d-flex flex-row justify-content-center align-items-center mt-3">
+								<a href="https://twitter.com/GLavrilleux" target="_blank"><i class="fab fa-twitter"></i></a>
+								<a href="https://fr.linkedin.com/in/guillaumelavrilleux" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+								<a href="https://vimeo.com/lavrilleuxguillaume" target="_blank"><i class="fab fa-vimeo-v"></i></a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -175,26 +186,126 @@
 		<!-- END ABOUT -->
 
 
-		<!-- PORTFOLIO -->
-		<section id="portfolio" >
-			<h2 class="d-block text-align-center">My Works</h2>
-			<h3>Audio Designer</h3>
-			<div class="browser clearfix">
-				<div class="box">
-					<span class="icon-bell"></span>
-					<p>Do Re Mi What Fa Si Ti Doi Nemo Do Re Mi What Fa Si Ti Doi Nemo</p>
+		<!-- SOUNDWAVE -->
+		<section id="wavebg2" class="content content--highlight flexy flexy--center"></section>
+		<!-- END SOUNDWAVE-->
+
+
+		<!-- WORKS -->
+		<section id="works" >
+			<h2>My Works</h2>
+			<div class="carousel-block">
+			<div id="carouselWorks" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+				  <li data-target="#carouselWorks" data-slide-to="0" class="active"></li>
+				  <li data-target="#carouselWorks" data-slide-to="1"></li>
+				  <li data-target="#carouselWorks" data-slide-to="2"></li>
+				</ol>
+				<div class="carousel-inner">
+				  <div class="carousel-item active">
+					<img src="./img/home-portrait-arnaud-tessier.jpg" class="d-block img-fluid" alt="...">
+					<div class="carousel-caption d-none d-md-block">
+					  <h5>First slide label</h5>
+					  <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+					</div>
+				  </div>
+				  <div class="carousel-item">
+					<img src="./img/logo-AT.png" class="d-block img-fluid" alt="...">
+					<div class="carousel-caption d-none d-md-block">
+					  <h5>Second slide label</h5>
+					  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					</div>
+				  </div>
+				  <div class="carousel-item">
+					<img src="./img/portrait-hugo.jpg" class="d-block img-fluid" alt="...">
+					<div class="carousel-caption d-none d-md-block">
+					  <h5>Third slide label</h5>
+					  <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+					</div>
+				  </div>
 				</div>
-				<div class="box">
-					<span class="icon-heart"></span>
-					<p>E La Yo Na Ti Do Pa Pa Noah Do Re Mi What Fa Si Ti Doi Nemo</p>
-				</div>
-				<div class="box">
-					<span class="icon-cog"></span>
-					<p>No way! Hey Hey, me ok! Do Re Mi What Fa Si Ti Doi Nemo</p>
-				</div>
+				<a class="carousel-control-prev" href="#carouselWorks" role="button" data-slide="prev">
+				  <span aria-hidden="true"><i class="fas fa-step-backward"></i></span>
+				</a>
+				<a class="carousel-control-next" href="#carouselWorks" role="button" data-slide="next">
+				  <span aria-hidden="true"><i class="fas fa-step-forward"></i></span>
+				  <span class="sr-only">Next</span>
+				</a>
+			</div>
 			</div>
 		</section>
-		<!-- END PORTFOLIO -->
+		<!-- END WORKS -->
+
+
+		<!-- SOUNDWAVE -->
+		<section id="wavebg3" class="content content--highlight flexy flexy--center"></section>
+		<!-- END SOUNDWAVE-->
+
+
+		<!-- CONTACT -->
+		<section id="contact">
+		<div class="container pt-4 pb-5 mb-5" data-aos="zoom-in">
+			<h2 class="title-part">Contact Me</h2>
+			<div class="contact-form-container">
+				<div class="contact-me">
+				  <div class="contact-header">
+					<h2>
+					  &#9135;&#9135;&#9135;&#9135;&nbsp;&nbsp;FOLLOW ME
+					</h2>
+				  </div>
+				  <div class="social-bar">
+					<ul>
+					  <li>
+						<a href="https://twitter.com/GLavrilleux" target="_blank"><i class="fab fa-twitter"></i></a>
+					  </li>
+					  <li>
+						<a href="https://fr.linkedin.com/in/guillaumelavrilleux" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+					  </li>
+					  <li>
+						<a href="https://vimeo.com/lavrilleuxguillaume" target="_blank"><i class="fab fa-vimeo-v"></i></a>
+					  </li>
+					</ul>
+				  </div>
+				</div>
+				<div class="header">
+				  <h2>
+					Contact me to start your next project! 
+				  </h2>
+				</div>
+				<div class="address">
+				  <i class="fas fa-map-marker-alt"></i>
+				  <h3>
+					Bordeaux
+				  </h3>
+				</div>
+				<div class="email">
+				  <i class="fas fa-envelope"></i>
+				  <h3>
+					<a href="mailto:lavrilleuxguillaume@gmail.com" class="mail">lavrilleuxguillaume@gmail.com</a>
+				  </h3>
+				</div>
+				<div class="network">
+					<i class="fas fa-user-plus"></i>
+					<div class="net-flex">
+						<a href="https://twitter.com/GLavrilleux" target="_blank"><i class="fab fa-twitter"></i></a>
+						<a href="https://fr.linkedin.com/in/guillaumelavrilleux" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+						<a href="https://vimeo.com/lavrilleuxguillaume" target="_blank"><i class="fab fa-vimeo-v"></i></a>
+					</div>
+				</div>
+				<div class="contact-form">
+				  <form id="contact-form">
+					<input type="text" name="user_name" class="form-control" placeholder="Name" autocomplete="off" required="required">
+					<input type="email" name="user_email" class="form-control" placeholder="Email" autocomplete="off" required="required">
+					<textarea class="form-control" rows="4" name="message" placeholder="Tell me about your project..." required="required"></textarea>
+					<div class="bouton-contact">
+						<button type="submit" value="send" class="btn btn-info btn-round" text="SEND"><i class="fas fa-paper-plane"></i></button>
+					</div>
+				  </form>
+				</div>
+			  </div>
+		</div>
+		</section>
+		<!-- END CONTACT -->
 
 
 		<!-- EQUALIZER -->
@@ -213,126 +324,30 @@
 			</div>
 		</section>
 		<!-- END EQUALIZER -->
-
-
-		<!-- CONTACT -->
-		<section id="contact">
-		<div class="container pt-4 pb-5 mb-5" data-aos="zoom-in">
-			<h2 class="title-part">Contact</h2>
-			<div class="contact-link">
-				<div class="d-flex flex-column item">
-					<h3><i class="fas fa-phone-alt mr-2"></i> Téléphone</h3>
-					<a href="tel:0636408233" class="tel">06 36 40 82 33</a>
-				</div>
-			
-				<div class="d-flex flex-column item">
-					<h3><i class="fas fa-at mr-2"></i> E-Mail</h3>
-					<a href="mailto:hugogarcia@kirolasante.fr" class="mail">hugogarcia@kirolasante.fr</a>
-				</div>
-			
-				<div class="d-flex flex-column item">
-					<h3><i class="fas fa-user-plus mr-2"></i> Réseaux Sociaux</h3>
-					<div class="d-flex flex-raw justify-content-center network">
-					<a href="https://www.facebook.com/Kirola-Sant%C3%A9-115413243621607" target="_blank" rel="external nofollow noreferrer noopener"
-						><i class="fab fa-facebook mx-3"></i
-					></a>
-					<a href="https://www.instagram.com/kirolasante/?hl=fr" target="_blank" rel="external nofollow noreferrer noopener"
-						><i class="fab fa-instagram mx-3"></i
-					></a>
-					</div>
-				</div>
-				</div>
-			<div class="pb-4 text-center">
-				<h2>Vous souhaitez commencer ? Vous avez une question ?
-					<br><br>
-					Contactez-moi !</h2>
-				<p class="text-muted under-txt">
-						Kirola Santé s'engage à respecter la confidentialité des informations transmises. Les données ne seront jamais divulguées ou diffusées à des fins commerciales.
-				</p>
-			</div>
-
-			<div>
-				<form class="contact-form" id="contact-form">
-					
-					<div class="form-group input-group">
-						<span class="input-group-text"><i class="fas fa-user"></i></span>
-						<input type="text" name="user_lastname" class="form-control" placeholder="NOM" autocomplete="off" required="required"> 
-						<input type="text" name="user_firstname" class="form-control" placeholder="Prénom" autocomplete="off" required="required">
-					</div>
-					<div class="form-group input-group">
-						<span class="input-group-text"><i class="fas fa-phone-alt"></i></span>
-						<input type="tel" name="user_phone" class="form-control" placeholder="Téléphone (optionnel)" autocomplete="off" pattern="[0-9]{10}"> 
-					</div>
-					<div class="form-group input-group">
-						<span class="input-group-text"><i class="fas fa-at"></i></span>
-						<input type="email" name="user_email" class="form-control" placeholder="votre-email@gmail.com" autocomplete="off" required="required"> 
-					</div>
-					<div class="form-group input-group">
-						<span class="input-group-text"><i class="fas fa-map-marker-alt"></i></span>
-						<input type="text" name="user_city" class="form-control" placeholder="Ville" autocomplete="off" required="required"> 
-					</div>
-					<div class="form-group input-group">
-						<textarea class="form-control" cols="30" rows="9" name="message" placeholder="Ecrivez votre message ici..." required="required"></textarea>
-					</div>
-					
-					<div class="bouton-contact">
-						<div class="col-lg-12">
-							<button type="submit" value="send" class="btn btn-info btn-round" text="SEND"><i class="fas fa-paper-plane"></i></button>
-						</div>
-					</div>
-
-				</form>
-			</div>
-		</div>
-		</section>
-		<!-- END CONTACT -->
-
+		
 			
 		<!-- FOOTER -->
 		<footer class="pb-4">
 		<div class="container text-center">
-			<div class="row">
-				<div class="col-6 col-md">
-					<h5 class="mb-4 text-white"><span class="kirola">Kirola Santé</span></h5>
-					<ul class="list-unstyled text-small text-center">
-						<img src="./img/favicon.png" alt="Kirola Santé" class="kirola-footer-img">
-					</ul>
+			<div class="footer-nav">				
+				<div class="pb-3">					
+					<a href="#home">Home</a> | <a href="#about">About</a> | <a href="#works">Works</a> | <a href="#contact">Contact</a>
 				</div>
-				<div class="col-6 col-md">
-					<h5 class="mb-4 text-white">Navigation</h5>
-					<ul class="list-unstyled text-small text-center">
-						<li><a class="text-muted" href="#header">Accueil</a></li>
-						<li><a class="text-muted" href="#coach">Le Coach</a></li>
-						<li><a class="text-muted" href="#seniors">Seniors</a></li>
-						<li><a class="text-muted" href="#juniors">Juniors</a></li>
-						<li><a class="text-muted" href="#tarifs">Tarifs</a></li>
-						<li><a class="text-muted" href="#contact">Contact</a></li>
-					</ul>
+				<div class="pb-3">
+					<a href="mailto:lavrilleuxguillaume@gmail.com"><i type="button" class="fas fa-at" data-toggle="tooltip" data-placement="left" title="lavrilleuxguillaume@gmail.com"></i></a>
 				</div>
-				<div class="col-6 col-md">
-					<h5 class="mb-4 text-white">Contactez-nous</h5>
-					<ul class="list-unstyled text-small text-center">
-						<li><a class="text-muted" href="mailto:hugogarcia@kirolasante.fr"><i class="fas fa-at mr-2"></i>hugogarcia@kirolasante.fr</a></li>
-						<br>
-						<li><a class="text-muted" href="tel:0636408233"><i class="fas fa-phone-alt mr-2"></i>06 36 40 82 33</a></li>
-					</ul>
-				</div>
-				<div class="col-6 col-md">
-					<h5 class="mb-4 text-white">Follow me</h5>
-					<ul class="list-unstyled text-small text-center">
-						<li><a class="text-muted" href="https://www.facebook.com/Kirola-Sant%C3%A9-115413243621607" target="_blank" rel="external nofollow noreferrer noopener">Facebook</a></li>
-						<br>
-						<li><a class="text-muted" href="https://www.instagram.com/kirolasante/?hl=fr" target="_blank" rel="external nofollow noreferrer noopener">Instagram</a></li>
-					</ul>
+				<div>
+					<a href="https://twitter.com/GLavrilleux" target="_blank" rel="external nofollow noreferrer noopener">Twitter</a>
+					<a href="https://fr.linkedin.com/in/guillaumelavrilleux" target="_blank" rel="external nofollow noreferrer noopener">LinkedIn</a>
+					<a href="https://vimeo.com/lavrilleuxguillaume" target="_blank" rel="external nofollow noreferrer noopener">Vimeo</a>
 				</div>
 			</div>
 			<div class="copyright">
-				<p>© 2020 - www.guillaume-lavrilleux.com - Sound Designer | Made by : <a href="https://www.arnaud-tessier.fr" class="dev">Arnaud Tessier<img class="dev-img" src="./img/logo-AT-mini.png" alt="Arnaud Tessier"></a></p>
+				<p>© 2020 - www.guillaume-lavrilleux.com - Sound Designer | Made by : <a href="https://www.arnaud-tessier.fr" target="_blank" class="dev">Arnaud Tessier<img class="dev-img" src="./img/logo-AT-mini.png" alt="Arnaud Tessier"></a></p>
 			</div>
 		</div>
 		</footer>
 		<!-- END FOOTER -->
-	
 	
 	</div>
 	<!-- END CONTAINER PAGE -->
@@ -349,6 +364,7 @@
 
 	<!-- JAVASCRIPTS -->    
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
 		<script src="js/modernizr.custom.js"></script>

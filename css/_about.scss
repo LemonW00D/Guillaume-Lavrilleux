@@ -13,7 +13,7 @@
     }
 
     .coach-desc{
-        background-color: #F3F2EF;
+        background-color: #F1ECE6;
         border-radius: 5px;
         box-shadow: 0 .5rem 1rem rgba(255, 255, 255, 0.25)!important;
         margin: 2rem;
@@ -22,6 +22,7 @@
             font-size: 2.75rem;
             font-weight: 900;
             color: black;
+            margin: 0;
         }
         h3{
             font-size: 2rem;
@@ -37,11 +38,15 @@
             font-size: 1.8rem;
             list-style: inside square;
             padding-left: 2rem;
-            color: black;
+            color: $background;
         }
         a{
             font-size: 1.8rem;
             color: black;
+        }
+        i{
+            color: #3C3C3C;
+            margin: 2rem;
         }
     }
 

@@ -11,7 +11,7 @@
 
 	PathLoader.prototype._draw = function( val ) {
 		this.el.style.strokeDashoffset = this.el.getTotalLength() * ( 1 - val );
-	}
+	};
 
 	PathLoader.prototype.setProgress = function( val, callback ) {
 		this._draw(val);
@@ -19,11 +19,11 @@
 			// give it a time (ideally the same like the transition time) so that the last progress increment animation is still visible.
 			setTimeout( callback, 200 );
 		}
-	}
+	};
 
 	PathLoader.prototype.setProgressFn = function( fn ) {
 		if( typeof fn === 'function' ) { fn( this ); }
-	}
+	};
 
 	// add to global namespace
 	window.PathLoader = PathLoader;
@@ -110,19 +110,59 @@
 })();
 
 
-/* WAVE ANIMATION */
+/* WAVE ANIMATION x3 */
 (function(window) {
 
 	'use strict';
 
 	function init() {
 		var siriWave = new SiriWave({
-			container: document.getElementById('wavebg'),
+			container: document.getElementById('wavebg1'),
 			//cover: true,
 			speed: 0.01,
 			color: '#4d61c5',
 			frequency: 3,
-			amplitude: 0.5,
+			amplitude: 0.9,
+			autostart: true
+		});
+	}	
+
+	init();
+
+})(window);
+
+(function(window) {
+
+	'use strict';
+
+	function init() {
+		var siriWave = new SiriWave({
+			container: document.getElementById('wavebg2'),
+			//cover: true,
+			speed: 0.01,
+			color: '#4d61c5',
+			frequency: 3,
+			amplitude: 0.9,
+			autostart: true
+		});
+	}	
+
+	init();
+
+})(window);
+
+(function(window) {
+
+	'use strict';
+
+	function init() {
+		var siriWave = new SiriWave({
+			container: document.getElementById('wavebg3'),
+			//cover: true,
+			speed: 0.01,
+			color: '#4d61c5',
+			frequency: 3,
+			amplitude: 0.9,
 			autostart: true
 		});
 	}	
@@ -163,9 +203,9 @@ $('.about-nav').click(function () {
   }, 100);
 });
 
-$('.portfolio-nav').click(function () {
+$('.works-nav').click(function () {
   $('html, body').animate({
-    scrollTop: $('#portfolio').offset().top
+    scrollTop: $('#works').offset().top
   }, 100);
 });
 
@@ -194,6 +234,30 @@ AOS.init({
 /* SCROLLSPY */
 $('body').scrollspy({
   target: '.fixed-top'
+});
+
+
+/* CAROUSEL */
+$('.carousel').carousel({
+	interval: 7500,
+	keyboard: true,
+	pause: "hover",
+	wrap: true,
+	touche: true,
+});
+
+
+
+/* TOOLTIPS */
+$(function () {
+	$('[data-toggle="tooltip"]').tooltip();
+});
+jQuery(document).ready(function($) {
+	$(".my-tooltip").tooltip({
+	  html: "true",
+	  placement: "auto-right",
+	  delay: {"show": 300, "hide": 100}
+	});
 });
 
 

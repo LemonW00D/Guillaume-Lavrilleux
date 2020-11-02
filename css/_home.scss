@@ -1,53 +1,46 @@
 @font-face {
-	font-family: 'Japan';
-	src: url('../font/Japanese\ Style.ttf')  format('truetype');
-}
-
-@font-face {
 	font-family: 'Valorant';
 	src: url('../font/Valorant\ Font.ttf')  format('truetype');
 }
 
 #home{
-
-    min-height: 100vh;
+    padding-top: 75px;
+    min-height: 80vh;
 
     .home-box{
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        margin: 0 5rem 12rem;
+        margin: 0 5rem 6rem;
     }
 
     .title{
         text-align: start;
         width: 33%;
         z-index: 999;
-        margin-left: 2rem;
 
         h2{
-            text-align: start;
+            text-align: center;
             color: $bleu;            
             font-size: 5rem;
-            span{
-                color: $bleu;
-                font-size: 5.3rem;
-                font-family: 'Japan', Fallback, sans-serif;
-            }
+            font-family: 'Valorant', Fallback, sans-serif;
+            letter-spacing: 2px;
         }
 
         .divider{
             height: 2px;
             width: auto;
             background-color: white;
-            margin: 3rem 3rem 3rem 0;
+            margin: 3rem 1rem;
         }
 
         .description{
             p{
                 font-size: 2.5rem;
                 line-height: 4rem;
+                padding: 2rem 0;
+                margin: 0 1rem;
             }
         }
 
@@ -124,7 +117,7 @@
                     & span.bg {
                         left: -5%;
                         position: absolute;
-                        background: $rouge;
+                        background: #fc7420;
                         width: 0;
                         height: 100%;
                         z-index: 3;
@@ -134,7 +127,7 @@
 
                     & span.text {
                         font-size: 2rem;
-                        color: $rouge;
+                        color: #fc7420;
                         font-family: 'Valorant';
                         font-weight: 600;
                         z-index: 4;
@@ -185,7 +178,7 @@
     @include sm{
         .home-box{
             flex-direction: column;
-            margin: 0 1rem 12rem;
+            margin: 0 1rem 6rem;
         }
 
         .title{
@@ -198,54 +191,11 @@
             margin-left: 0;
         }
     }
-}
 
-#wavebg canvas {
-	position: absolute;
-	top: 44vh;
-    left: 0;
-    right: 0;
-	width: 100%;
-	height: 100%;
-}
-
-/* Content */
-.content {
-	position: relative;
-	min-height: 80vh;
-	padding: 15vh 0 0;
-	-webkit-touch-callout: none;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-}
-
-.content--highlight {
-	padding: 0;
-	background: transparent;
-}
-
-/* Flexbox helper classes */
-.flexy {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-.flexy--center {
-	justify-content: center;
-}
-
-@media screen and (max-width: 50em) {
-	.content--highlight {
-		min-height: 0;
-		padding: 2em;
-    }
-}
-
-@media screen and (max-width: 40em) {
-    #wavebg canvas {
-    	opacity: 0.65;
+    @include xs{
+        .home-box{
+            flex-direction: column;
+            margin: 0 1rem 2rem;
+        }
     }
 }

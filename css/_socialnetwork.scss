@@ -3,6 +3,7 @@
     position: sticky;
     top: 100px;
     z-index: 9999;
+    width: 160px;
 
   a {
     color: white;
@@ -21,18 +22,18 @@
   .social ul li {
     display: block;
     margin: 5px;
-    background: rgba(255, 70, 85, 0.4);
+    background: $rouge;
     width: 300px;
     text-align: right;
     padding: 10px;
     -webkit-border-radius: 0 30px 30px 0;
     -moz-border-radius: 0 30px 30px 0;
     border-radius: 0 30px 30px 0;
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    -ms-transition: all 1s;
-    -o-transition: all 1s;
-    transition: all 1s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
   }
   .social ul li:hover {
     -webkit-transform: translate(110px, 0);
@@ -40,19 +41,8 @@
     -ms-transform: translate(110px, 0);
     -o-transform: translate(110px, 0);
     transform: translate(110px, 0);
+    background: $bleu;
   }
-
-    .twitter:hover{
-        background: rgba(29, 161, 242, 0.7);
-    }
-
-    .gafr:hover{
-        background: rgba(11, 134, 238, 0.7);
-    }
-
-    .linkedin:hover{
-        background: rgba(0, 123, 182, 0.7);
-    }
   
   .social ul li:hover a {
     color: white;
@@ -65,11 +55,11 @@
     -ms-transform: rotate(360deg);
     -o-transform: rotate(360deg);
     transform: rotate(360deg);
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    -ms-transition: all 1s;
-    -o-transition: all 1s;
-    transition: all 1s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
   }
   .social ul li i {
     margin-left: 10px;

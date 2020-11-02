@@ -1,33 +1,15 @@
 footer{
-    .text-muted{
-        color: $gris !important;
-    }
+    background: linear-gradient(to bottom, #18191A,#000000);
 
-    .kirola{
-        font-weight: 900;
-        text-transform: uppercase;
-        color: black;
-        font-family: 'Nixie One', cursive;
-    }
-
-    .kirola-footer-img{
-        height: 95px;
-        width: auto;
-    }
-
-    @include md{
-        .text-left{
-            padding-left: 0;
-
-            li{
-                text-align: center;
-            }
+    .footer-nav{
+        a{
+            text-align: center;
+            padding: 1rem 0.5rem;
         }
-    }
-
-    @include xs{
-        .fas {
-            display: none;
+        i{
+            &:hover{
+                color: #0056b3;
+            }
         }
     }
 }
@@ -39,12 +21,12 @@ footer{
         text-align: center;
         margin: 0;
         font-size: 1.1rem;
-        color: $gris;
+        color: #F3F2EF;
     }
 
     .dev{
         font-size: 1.1rem;
-        color: black;
+        color: #F3F2EF;
 
         &:hover{
         text-decoration: underline;
@@ -57,4 +39,19 @@ footer{
         border-radius: 10%;
         margin-left: 0.5rem;
     }
+}
+
+.tooltip {
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 500;
+    text-align: center;
+  }
+.tooltip .tooltip-inner {
+    max-width: 250px;
+    color: #fff;
+    text-align: center;
+    background-color: #000;
+    border-radius: 4px;
 }
