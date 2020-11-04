@@ -68,7 +68,7 @@
 		var simulationFn = function(instance) {
 			var progress = 0,
 				interval = setInterval( function() {
-					progress = Math.min( progress + Math.random() * 1, 1 ); /*0.05, 1*/
+					progress = Math.min( progress + Math.random() * 0.025, 1 ); /*0.05, 1*/
 
 					instance.setProgress( progress );
 
@@ -140,7 +140,7 @@
 			container: document.getElementById('wavebg2'),
 			//cover: true,
 			speed: 0.01,
-			color: '#4d61c5',
+			color: '#13c9d7',
 			frequency: 3,
 			amplitude: 0.9,
 			autostart: true
@@ -160,7 +160,7 @@
 			container: document.getElementById('wavebg3'),
 			//cover: true,
 			speed: 0.01,
-			color: '#4d61c5',
+			color: '#fc7420',
 			frequency: 3,
 			amplitude: 0.9,
 			autostart: true
@@ -213,6 +213,43 @@ $('.contact-nav').click(function () {
   $('html, body').animate({
     scrollTop: $('#contact').offset().top
   }, 100);
+});
+
+
+/* NAVBAR SOUND */
+$(".nav-item")
+  .each(function(i) {
+    if (i != 0) { 
+      $("#beep-two")
+        .clone()
+        .attr("id", "beep-two" + i)
+        .appendTo($(this).parent()); 
+    }
+    $(this).data("beeper", i);
+  })
+  .mouseenter(function() {
+    $("#beep-two" + $(this).data("beeper"))[0].play();
+  });
+$("#beep-two").attr("id", "beep-two0");
+
+
+
+/* MUTE BUTTON ANIMATION */
+$('#sound-button').click(function() {
+	$('#dsound-button').toggle();
+    $("i", this).toggleClass("fas fa-volume-up fas fa-volume-mute");
+});
+
+
+/* MUTE BUTTON ACTIVATION */
+$(function(){
+    jQuery('#sound-button').click(function () {
+        if( $("audio").prop('muted') ) {
+			$("audio").prop('muted', false);
+	  } else {
+		$("audio").prop('muted', true);
+	  }
+    });
 });
 
 

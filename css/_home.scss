@@ -7,6 +7,17 @@
     padding-top: 75px;
     min-height: 80vh;
 
+    #modal-button{
+        position: fixed;
+        top: 100px;
+        right: 10px;
+        cursor: pointer;
+
+        i{
+            font-size: 2rem;
+        }
+    }
+
     .home-box{
         display: flex;
         flex-direction: row;

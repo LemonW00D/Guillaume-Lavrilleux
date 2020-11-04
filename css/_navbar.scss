@@ -147,9 +147,13 @@ nav {
 }
 
 .navbar-toggler{
+  &:focus, &:active, &:visited, &:focus-within, &:focus-visible{    
+    outline: none;
+  }
   i{
     font-size: 2.5rem;
     color: #000;
+    outline: none;
   }
 }
 

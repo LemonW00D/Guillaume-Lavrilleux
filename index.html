@@ -18,7 +18,7 @@
     <meta name="publisher" content="Arnaud TESSIER, http://www.arnaud-tessier.fr">
 
     <!-- Titre + Favicon -->    
-    <link rel="icon" type="image/png" href="">    
+    <link rel="icon" type="image/png" href="./img/logo-favicon.png">    
 	<title>Guillaume Lavrilleux | Sound Designer</title>
 
     <!-- Fontawesome -->
@@ -51,8 +51,13 @@
 				<i class="fas fa-bars"></i>
 			</button>
 			<div class="navbar-collapse collapse" id="navbarColor02" >
-				<ul class="navbar-nav mr-auto mx-auto d-flex justify-content-center align-items-center">
-					<li class="nav-item home-nav"><a class="nav-link" href="#home"><svg><rect x="0" y="0" fill="none" width="100%" height="100%"/></svg>Home</a></li>
+				<ul class="navbar-nav mr-auto mx-auto d-flex justify-content-center align-items-center nav-two">
+					<li class="nav-item home-nav"><a class="nav-link" href="#home"><svg><rect x="0" y="0" fill="none" width="100%" height="100%"/></svg>Home</a>
+						<audio id="beep-two" preload="auto">
+							<source src="./sound/beep.mp3" controls></source>
+							<source src="./sound/beep.ogg" controls></source>
+							Your browser isn't invited for super fun time.
+						</audio></li>
 					<li class="nav-item about-nav"><a class="nav-link" href="#about"><svg><rect x="0" y="0" fill="none" width="100%" height="100%"/></svg>About</a></li>
 					<li class="nav-item works-nav"><a class="nav-link" href="#works"><svg><rect x="0" y="0" fill="none" width="100%" height="100%"/></svg>Works</a></li>
 					<li class="nav-item contact-nav"><a class="nav-link" href="#contact"><svg><rect x="0" y="0" fill="none" width="100%" height="100%"/></svg>Contact</a></li>
@@ -74,10 +79,16 @@
 			<div class="ip-logo" id="preload">
 				<img src="./img/logo-GL.png" alt="logo Guillaume Lavrilleux" style="max-width: 250px;">
 				<h1>GUILLAUME<br>LAVRILLEUX</h1>
-				<h3>SOUND <strong>DESIGNER</strong></h3>
+				<!--<h3>SOUND <strong>DESIGNER</strong></h3>-->
 				<audio autoplay="true" preload="auto">
 					<source src="./sound/02 - The Dark Side.mp3" type="audio/mpeg" >
-				</audio>				  
+				</audio>	
+				<div>
+					<br>
+					<p>This website uses sound effects. They are muted by default. You can unmute them by clicking the speaker icon in the top right corner. Make sure to adjust the volume of your computer at a comfortable level.</p>
+					<br>
+					<p>Ce site utilise des effets sonores. Ils sont désactivés par défaut. Vous pouvez les activer en cliquant sur l'icône de haut-parleur en haut à droite de l'écran. Attention à ajuster le volume sonore de votre ordinateur à un niveau raisonnable.</p>
+				</div>			  
 			</div>
 			<div class="ip-loader">
 				<svg class="ip-inner" width="60px" height="60px" viewBox="0 0 80 80">
@@ -92,6 +103,11 @@
 		<!-- HOME -->
 		<section id="home">
 			<div class="home-box">
+				<div id="sound-button">
+					<div class="unmuted toggle-sound" type="button" data-toggle="tooltip" data-placement="left" title="Mute/Unmute sounds" >
+						<i class="fas fa-volume-up"></i>
+					</div>
+				</div>
 				<div class="title">
 					<h2>Guillaume Lavrilleux</h2>
 					<div class="divider"></div>
@@ -120,7 +136,6 @@
 			</div>
 		</section>
 		<!-- END HOME -->
-
 		
 		<!-- SOUNDWAVE -->
 		<section id="wavebg1" class="content content--highlight flexy flexy--center"></section>
@@ -192,9 +207,9 @@
 
 
 		<!-- WORKS -->
-		<section id="works" >
+		<section id="works">
 			<h2>My Works</h2>
-			<div class="carousel-block">
+			<div class="carousel-block" data-aos="zoom-in">
 			<div id="carouselWorks" class="carousel slide" data-ride="carousel">
 				<ol class="carousel-indicators">
 				  <li data-target="#carouselWorks" data-slide-to="0" class="active"></li>
