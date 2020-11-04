@@ -26,7 +26,7 @@
                 margin: 0 0.75rem 0.5rem;
             }
             .active{
-                background-color: $bleu;
+                background-color: $rouge;
             }
         }
 
@@ -55,8 +55,7 @@
         .carousel-control-prev{
             display: flex;
             justify-content: flex-start;
-            align-items: flex-end;
-            margin-bottom: 10rem;
+            align-items: center;
 
             span{
                 margin: 2rem;
@@ -79,8 +78,7 @@
         .carousel-control-next{
             display: flex;
             justify-content: flex-end;
-            align-items: flex-end;
-            margin-bottom: 10rem;
+            align-items: center;
 
             span{
                 margin: 2rem;

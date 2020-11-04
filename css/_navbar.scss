@@ -38,7 +38,7 @@ nav {
 }
 
 .img-nav-mobile{
-  height: 70px;
+  height: 50px;
   width: auto;
   padding: 2px;
   background-color: transparent;
@@ -59,7 +59,7 @@ nav {
   width: 130px;
   height: 82px;
   text-align: center;
-  margin: 0 2.5rem;
+  margin: 0 1.5rem;
 
   &:hover{
     color: white;
@@ -146,19 +146,94 @@ nav {
   transition: color .3s;
 }
 
+.navbar-nav{
+  margin-left: 15rem;
+}
+
+.social-nav{
+  margin-right: 10rem;
+  ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    li:hover i {
+      color: #fff;
+      background: $rouge;
+      -webkit-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+      -webkit-transition: all 0.5s;
+      -moz-transition: all 0.5s;
+      -ms-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s;
+    }
+
+    li{
+      margin: 0 1.75rem;
+
+      i{
+        padding-top: 0.8rem;
+        color: $bleu;
+        font-size: 2rem;
+        background: #fff;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+
+        &:hover{
+          color: white;
+        }
+      }
+    }
+  }
+}
+
 .navbar-toggler{
   &:focus, &:active, &:visited, &:focus-within, &:focus-visible{    
     outline: none;
   }
   i{
-    font-size: 2.5rem;
+    font-size: 2.75rem !important;
     color: #000;
     outline: none;
   }
 }
 
+@include xxl {
+  .social-nav{
+    margin-right: 5rem !important;
+  }
+  .navbar-nav{
+    margin-left: 3.75rem;
+  }
+}
+
 
 @include xl {
+  .social-nav{
+    margin-right: 2rem;
+    li{
+      margin: 0 0.5rem !important;
+    }
+  }
+  .navbar-nav{
+    margin-left: 0rem;
+    .nav-item{
+      margin: 0 0.5rem;
+    }
+  }
   .container-fluid{
     .navbar-brand {  
       font-size: 2.25rem;
@@ -170,6 +245,9 @@ nav {
 }
 
 @include md {
+  .social-nav{
+    display: none;
+  }
   .computer{
     display: none;
   }

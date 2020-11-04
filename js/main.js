@@ -68,7 +68,7 @@
 		var simulationFn = function(instance) {
 			var progress = 0,
 				interval = setInterval( function() {
-					progress = Math.min( progress + Math.random() * 0.025, 1 ); /*0.05, 1*/
+					progress = Math.min( progress + Math.random() * 1, 1 ); /*0.025, 1*/
 
 					instance.setProgress( progress );
 
@@ -120,7 +120,7 @@
 			container: document.getElementById('wavebg1'),
 			//cover: true,
 			speed: 0.01,
-			color: '#4d61c5',
+			color: '#fc7420',
 			frequency: 3,
 			amplitude: 0.9,
 			autostart: true
@@ -140,7 +140,7 @@
 			container: document.getElementById('wavebg2'),
 			//cover: true,
 			speed: 0.01,
-			color: '#13c9d7',
+			color: '#fc7420',
 			frequency: 3,
 			amplitude: 0.9,
 			autostart: true
@@ -236,12 +236,19 @@ $("#beep-two").attr("id", "beep-two0");
 
 /* MUTE BUTTON ANIMATION */
 $('#sound-button').click(function() {
-	$('#dsound-button').toggle();
-    $("i", this).toggleClass("fas fa-volume-up fas fa-volume-mute");
+    $("i", this).toggleClass("fas fa-volume-mute fas fa-volume-up");
 });
 
 
 /* MUTE BUTTON ACTIVATION */
+/* son muted au chargement */
+$(function(){
+    jQuery(document).ready(function () {
+		$("audio").prop("muted", true);
+	});
+});
+
+/* bouton toggle mute/unmute sound */
 $(function(){
     jQuery('#sound-button').click(function () {
         if( $("audio").prop('muted') ) {
@@ -281,6 +288,7 @@ $('.carousel').carousel({
 	pause: "hover",
 	wrap: true,
 	touche: true,
+	cycle: 1000,
 });
 
 

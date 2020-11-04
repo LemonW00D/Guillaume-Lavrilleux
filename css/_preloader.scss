@@ -28,7 +28,7 @@
 .ip-logo {
 	z-index: 10;
 	left: 0;
-	top: -60%;
+	top: -75%;
 	height: 200px;
 	transform: translateX(-50%) translateY(-50%);
 	font-family: "Montserrat" !important;
@@ -37,6 +37,20 @@
 	bottom: 0;
 	-webkit-transform: translate3d(0,25%,0);
 	transform: translate3d(0,25%,0);
+}
+
+.info-sound{
+	margin: 3rem 29rem;
+
+	p{
+		font-size: 1.9rem;
+	}
+}
+
+@include md{
+	.info-sound{
+		display: none;
+	}
 }
 
 .ip-logo h1{
@@ -60,7 +74,7 @@
 }
 
 .ip-loader {
-	bottom: 10%;
+	bottom: 5%;
 }
 
 .ip-header .ip-inner {

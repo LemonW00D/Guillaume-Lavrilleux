@@ -9,7 +9,7 @@
         .contact-me {
             position: relative;
             width: 250px;
-            background:#060709 no-repeat center url('../img/mic2.jpg');
+            background:#060709;
             background-size: 250px auto;
             overflow: hidden;
             
@@ -88,7 +88,7 @@
             }
         }
 
-        .address, .email, .phone, .network {
+        .network {
             text-align: center;
             padding: 20px 0;
             color: #444;
@@ -120,10 +120,6 @@
                     margin: 0 2.5rem;
                 }
             }
-        }
-
-        .email{
-            padding: 20px 20px;
         }
 
         .contact-form {
@@ -259,9 +255,9 @@
     .contact-form-container {
     max-width: 800px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.5fr 0.5fr 2fr;
-    grid-template-areas: "contact-me header header header" "contact-me address email email" "contact-me contact-form contact-form contact-form";
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: 0.5fr 2fr;
+    grid-template-areas: "contact-me header" "contact-me contact-form";
     box-shadow: 0 .5rem 1rem rgba(255, 255, 255, 0.25)!important;
     }
 
@@ -271,14 +267,6 @@
 
     .header {
     grid-area: header;
-    }
-
-    .address {
-    grid-area: address;
-    }
-
-    .email {
-    grid-area: email;
     }
 
     .network {
@@ -299,16 +287,16 @@
                 i{
                     font-size: 2rem;
                     padding-top: 1rem !important;
-                    margin: 0 1rem !important;
+                    margin: 0 2rem !important;
                 }
             }
         }
         .contact-form-container {
             margin: 5rem auto;
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: 1fr;
             grid-template-rows: 0.5fr 0.5fr 2fr;
-            grid-template-areas: "header header header" "address network email" "contact-form contact-form contact-form";
+            grid-template-areas: "header" "network" "contact-form";
         }
     }
 
@@ -316,15 +304,15 @@
         .network{
             display: inline-block !important;
         }
-        .address, .email, .phone, .network {
+        .network {
             padding: 5px 0 !important;
         }
         .contact-form-container {
             margin: auto;
             display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 2fr;
-            grid-template-areas: "header" "address" "email" "network" "contact-form";
+            grid-template-rows: 0.5fr 0.5fr 2fr;
+            grid-template-areas: "header" "network" "contact-form";
         }
     }
 }

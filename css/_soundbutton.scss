@@ -1,8 +1,5 @@
 #sound-button{
     .toggle-sound {
-        position: fixed;
-        top: 90px;
-        right: 10px;
         background-color: $rouge;
         width: 55px;
         height: 55px;
@@ -14,6 +11,7 @@
         z-index: 999;
         animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
         box-shadow: 0 0 0 0 white;
+        margin-right: 2.5rem;
 
         i{
             font-size: 2.5rem;
@@ -22,5 +20,11 @@
         .tooltip{
             right: -5rem;
         }
+    }
+}
+
+@include md{
+    #sound-button{
+        display: none;
     }
 }
