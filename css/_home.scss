@@ -28,7 +28,7 @@
 
     .title{
         text-align: start;
-        width: 33%;
+        width: 40%;
         z-index: 999;
 
         h2{
@@ -43,10 +43,11 @@
             height: 2px;
             width: auto;
             background-color: white;
-            margin: 3rem 1rem;
+            margin: 3rem 3rem;
         }
 
         .description{
+            margin: 0 2rem;
             p{
                 font-size: 2.5rem;
                 line-height: 4rem;
@@ -180,7 +181,7 @@
         }
     }
     .video{
-        width: 66%;
+        width: 60%;
         margin-top: 6rem;
         margin-left: 2rem;
         z-index: 999;
