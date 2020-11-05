@@ -558,15 +558,15 @@ section {
           animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
   -webkit-box-shadow: 0 0 0 0 white;
           box-shadow: 0 0 0 0 white;
-  margin-right: 2.5rem;
+  margin-right: 2rem;
 }
 
 #sound-button .toggle-sound i {
   font-size: 2.5rem;
 }
 
-#sound-button .toggle-sound .tooltip {
-  right: -5rem;
+#sound-button .toggle-sound .tooltip-inner {
+  left: 100px !important;
 }
 
 @media screen and (max-width: 992px) {
@@ -1446,16 +1446,16 @@ nav {
   20% {
   }
   40% {
-    height: 13px;
-  }
-  60% {
     height: 33px;
   }
+  60% {
+    height: 49px;
+  }
   80% {
-    height: 47px;
+    height: 4px;
   }
   100% {
-    height: 18px;
+    height: 44px;
   }
 }
 
@@ -1463,16 +1463,16 @@ nav {
   20% {
   }
   40% {
-    height: 10px;
+    height: 35px;
   }
   60% {
-    height: 28px;
+    height: 37px;
   }
   80% {
-    height: 26px;
+    height: 46px;
   }
   100% {
-    height: 33px;
+    height: 44px;
   }
 }
 
@@ -1480,16 +1480,16 @@ nav {
   20% {
   }
   40% {
-    height: 30px;
+    height: 11px;
   }
   60% {
-    height: 35px;
+    height: 29px;
   }
   80% {
-    height: 4px;
+    height: 18px;
   }
   100% {
-    height: 12px;
+    height: 10px;
   }
 }
 
@@ -1497,16 +1497,16 @@ nav {
   20% {
   }
   40% {
-    height: 16px;
+    height: 24px;
   }
   60% {
-    height: 44px;
+    height: 4px;
   }
   80% {
-    height: 49px;
+    height: 14px;
   }
   100% {
-    height: 32px;
+    height: 34px;
   }
 }
 
@@ -1514,16 +1514,16 @@ nav {
   20% {
   }
   40% {
-    height: 40px;
+    height: 16px;
   }
   60% {
-    height: 1px;
+    height: 15px;
   }
   80% {
-    height: 1px;
+    height: 38px;
   }
   100% {
-    height: 37px;
+    height: 26px;
   }
 }
 
@@ -1531,16 +1531,16 @@ nav {
   20% {
   }
   40% {
-    height: 47px;
+    height: 23px;
   }
   60% {
-    height: 13px;
+    height: 19px;
   }
   80% {
-    height: 12px;
+    height: 44px;
   }
   100% {
-    height: 19px;
+    height: 17px;
   }
 }
 
@@ -1548,16 +1548,16 @@ nav {
   20% {
   }
   40% {
-    height: 49px;
+    height: 1px;
   }
   60% {
-    height: 31px;
+    height: 37px;
   }
   80% {
     height: 26px;
   }
   100% {
-    height: 7px;
+    height: 43px;
   }
 }
 
@@ -1565,16 +1565,16 @@ nav {
   20% {
   }
   40% {
-    height: 22px;
+    height: 19px;
   }
   60% {
-    height: 20px;
+    height: 31px;
   }
   80% {
-    height: 39px;
+    height: 3px;
   }
   100% {
-    height: 16px;
+    height: 30px;
   }
 }
 
@@ -1582,16 +1582,16 @@ nav {
   20% {
   }
   40% {
-    height: 34px;
+    height: 41px;
   }
   60% {
-    height: 34px;
+    height: 18px;
   }
   80% {
-    height: 21px;
+    height: 32px;
   }
   100% {
-    height: 5px;
+    height: 12px;
   }
 }
 
@@ -1599,16 +1599,16 @@ nav {
   20% {
   }
   40% {
-    height: 49px;
+    height: 23px;
   }
   60% {
-    height: 36px;
+    height: 23px;
   }
   80% {
-    height: 26px;
+    height: 45px;
   }
   100% {
-    height: 12px;
+    height: 27px;
   }
 }
 
@@ -1616,16 +1616,16 @@ nav {
   20% {
   }
   40% {
-    height: 44px;
+    height: 23px;
   }
   60% {
-    height: 37px;
+    height: 43px;
   }
   80% {
-    height: 15px;
+    height: 37px;
   }
   100% {
-    height: 8px;
+    height: 2px;
   }
 }
 
@@ -1633,16 +1633,16 @@ nav {
   20% {
   }
   40% {
-    height: 22px;
+    height: 18px;
   }
   60% {
-    height: 6px;
+    height: 33px;
   }
   80% {
-    height: 37px;
+    height: 1px;
   }
   100% {
-    height: 5px;
+    height: 4px;
   }
 }
 
@@ -1650,16 +1650,16 @@ nav {
   20% {
   }
   40% {
-    height: 3px;
+    height: 12px;
   }
   60% {
-    height: 14px;
+    height: 15px;
   }
   80% {
-    height: 17px;
+    height: 26px;
   }
   100% {
-    height: 16px;
+    height: 27px;
   }
 }
 
@@ -1667,16 +1667,16 @@ nav {
   20% {
   }
   40% {
-    height: 23px;
+    height: 10px;
   }
   60% {
-    height: 16px;
+    height: 47px;
   }
   80% {
-    height: 38px;
+    height: 11px;
   }
   100% {
-    height: 13px;
+    height: 2px;
   }
 }
 
@@ -1684,16 +1684,16 @@ nav {
   20% {
   }
   40% {
-    height: 33px;
+    height: 42px;
   }
   60% {
-    height: 47px;
+    height: 18px;
   }
   80% {
-    height: 17px;
+    height: 8px;
   }
   100% {
-    height: 29px;
+    height: 26px;
   }
 }
 
@@ -1701,16 +1701,16 @@ nav {
   20% {
   }
   40% {
-    height: 24px;
+    height: 50px;
   }
   60% {
-    height: 4px;
+    height: 25px;
   }
   80% {
-    height: 48px;
+    height: 42px;
   }
   100% {
-    height: 16px;
+    height: 44px;
   }
 }
 
@@ -1718,16 +1718,16 @@ nav {
   20% {
   }
   40% {
-    height: 50px;
+    height: 22px;
   }
   60% {
-    height: 33px;
+    height: 13px;
   }
   80% {
-    height: 15px;
+    height: 28px;
   }
   100% {
-    height: 37px;
+    height: 30px;
   }
 }
 
@@ -1735,16 +1735,16 @@ nav {
   20% {
   }
   40% {
-    height: 8px;
+    height: 10px;
   }
   60% {
-    height: 21px;
+    height: 22px;
   }
   80% {
-    height: 3px;
+    height: 43px;
   }
   100% {
-    height: 24px;
+    height: 19px;
   }
 }
 
@@ -1752,16 +1752,16 @@ nav {
   20% {
   }
   40% {
-    height: 26px;
+    height: 44px;
   }
   60% {
-    height: 19px;
+    height: 31px;
   }
   80% {
-    height: 26px;
+    height: 34px;
   }
   100% {
-    height: 21px;
+    height: 29px;
   }
 }
 
@@ -1769,16 +1769,16 @@ nav {
   20% {
   }
   40% {
-    height: 47px;
+    height: 14px;
   }
   60% {
-    height: 45px;
+    height: 9px;
   }
   80% {
-    height: 45px;
+    height: 6px;
   }
   100% {
-    height: 13px;
+    height: 15px;
   }
 }
 
@@ -1817,63 +1817,63 @@ nav {
 }
 
 #equalizer #levels .level.level1:after {
-  height: 14px;
-  -webkit-animation: pump-it-up1 4899ms linear infinite alternate;
-          animation: pump-it-up1 4899ms linear infinite alternate;
+  height: 33px;
+  -webkit-animation: pump-it-up1 6132ms linear infinite alternate;
+          animation: pump-it-up1 6132ms linear infinite alternate;
 }
 
 #equalizer #levels .level.level2:after {
-  height: 14px;
-  -webkit-animation: pump-it-up2 6410ms linear infinite alternate;
-          animation: pump-it-up2 6410ms linear infinite alternate;
+  height: 36px;
+  -webkit-animation: pump-it-up2 2456ms linear infinite alternate;
+          animation: pump-it-up2 2456ms linear infinite alternate;
 }
 
 #equalizer #levels .level.level3:after {
-  height: 13px;
-  -webkit-animation: pump-it-up3 2036ms linear infinite alternate;
-          animation: pump-it-up3 2036ms linear infinite alternate;
+  height: 6px;
+  -webkit-animation: pump-it-up3 5697ms linear infinite alternate;
+          animation: pump-it-up3 5697ms linear infinite alternate;
 }
 
 #equalizer #levels .level.level4:after {
-  height: 7px;
-  -webkit-animation: pump-it-up4 3514ms linear infinite alternate;
-          animation: pump-it-up4 3514ms linear infinite alternate;
+  height: 6px;
+  -webkit-animation: pump-it-up4 5980ms linear infinite alternate;
+          animation: pump-it-up4 5980ms linear infinite alternate;
 }
 
 #equalizer #levels .level.level5:after {
-  height: 30px;
-  -webkit-animation: pump-it-up5 3865ms linear infinite alternate;
-          animation: pump-it-up5 3865ms linear infinite alternate;
+  height: 2px;
+  -webkit-animation: pump-it-up5 6256ms linear infinite alternate;
+          animation: pump-it-up5 6256ms linear infinite alternate;
 }
 
 #equalizer #levels .level.level6:after {
-  height: 8px;
-  -webkit-animation: pump-it-up6 3640ms linear infinite alternate;
-          animation: pump-it-up6 3640ms linear infinite alternate;
+  height: 17px;
+  -webkit-animation: pump-it-up6 2737ms linear infinite alternate;
+          animation: pump-it-up6 2737ms linear infinite alternate;
 }
 
 #equalizer #levels .level.level7:after {
-  height: 46px;
-  -webkit-animation: pump-it-up7 4376ms linear infinite alternate;
-          animation: pump-it-up7 4376ms linear infinite alternate;
+  height: 33px;
+  -webkit-animation: pump-it-up7 3973ms linear infinite alternate;
+          animation: pump-it-up7 3973ms linear infinite alternate;
 }
 
 #equalizer #levels .level.level8:after {
-  height: 29px;
-  -webkit-animation: pump-it-up8 6922ms linear infinite alternate;
-          animation: pump-it-up8 6922ms linear infinite alternate;
+  height: 12px;
+  -webkit-animation: pump-it-up8 6499ms linear infinite alternate;
+          animation: pump-it-up8 6499ms linear infinite alternate;
 }
 
 #equalizer #levels .level.level9:after {
-  height: 48px;
-  -webkit-animation: pump-it-up9 4448ms linear infinite alternate;
-          animation: pump-it-up9 4448ms linear infinite alternate;
+  height: 39px;
+  -webkit-animation: pump-it-up9 5697ms linear infinite alternate;
+          animation: pump-it-up9 5697ms linear infinite alternate;
 }
 
 #equalizer #levels .level.level10:after {
-  height: 12px;
-  -webkit-animation: pump-it-up10 3115ms linear infinite alternate;
-          animation: pump-it-up10 3115ms linear infinite alternate;
+  height: 4px;
+  -webkit-animation: pump-it-up10 4700ms linear infinite alternate;
+          animation: pump-it-up10 4700ms linear infinite alternate;
 }
 
 #contact {

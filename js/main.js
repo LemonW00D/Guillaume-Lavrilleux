@@ -306,7 +306,6 @@ jQuery(document).ready(function($) {
 });
 
 
-
 /* EMAILJS */
 (function(){
   emailjs.init('USER-ID');
