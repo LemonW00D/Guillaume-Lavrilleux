@@ -98,26 +98,6 @@
             }
         }
     }
-
-    .browser {
-        margin: 0 auto;
-        padding-top: 8%;
-        min-height: 400px;
-        max-width: 1400px;
-        width: 100%;
-        border-radius: 8px;
-        background: #fff url(../img/logo-AT.png) no-repeat 50% 0;
-        background-size: 100%;
-        color: #d3d3d3;
-    }
-
-    .box {
-        float: left;
-        padding: 3.5em;
-        width: 33.3%;
-        font-size: 0.7em;
-        line-height: 1.5;
-    }
 }
 
 @media screen and (max-width: 45em) {

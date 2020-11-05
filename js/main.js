@@ -68,7 +68,7 @@
 		var simulationFn = function(instance) {
 			var progress = 0,
 				interval = setInterval( function() {
-					progress = Math.min( progress + Math.random() * 1, 1 ); /*0.025, 1*/
+					progress = Math.min( progress + Math.random() * 0.025, 1 ); /*0.025, 1*/
 
 					instance.setProgress( progress );
 
