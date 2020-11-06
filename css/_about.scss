@@ -17,7 +17,7 @@
         background-color: $box-background; /*#F1ECE6*/
         border-radius: 5px;
         box-shadow: 0 .5rem 1rem rgba(255, 255, 255, 0.25)!important;
-        margin:  0 2rem;
+        margin: 0 2rem;
 
         p{
             font-size: 1.8rem;
@@ -48,10 +48,10 @@
             flex-direction: column;
         }
     }
-
+/*
     @include xl{
         .coach-img{
             width: 60%;
         }
-    }
+    } */
 }
