@@ -1,12 +1,13 @@
 #contact{    
-    padding-top: 60px;
+    padding-top: 45px;
 
     .title-part{
         font-size: 4.5rem;
+        margin-bottom: 0;
     }
     .contact-form-container {
         background: $box-background; /* #F1ECE6 */
-        margin: 5rem auto;
+        margin: 2rem auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -80,6 +81,7 @@
                 font-family: 'Roboto';
                 color: white;
                 margin: 0;
+                padding: 1.5rem 0;
                 font-weight: 300;
             }
         }
