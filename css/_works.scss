@@ -1,16 +1,17 @@
 #works{
+    padding-top: 75px;
 
     h2{
         font-size: 4.5rem;
     }
 
     .carousel-block{
-        max-width: 66%;
+        max-width: 50%;
         margin: 5rem auto;
     }
 
     #carouselWorks{
-        background-color: #F1ECE6;
+        background-color: $box-background; /* #F1ECE6 */
         border-radius: 5px;
         box-shadow: 0 .5rem 1rem rgba(255, 255, 255, 0.25)!important;
 
@@ -18,11 +19,12 @@
             li{
                 display: block;
                 padding: 0;
+                padding-left: 0.1rem;
                 width: 1rem;
                 height: 1rem;
                 background-color: #ababab;
                 cursor: pointer;
-                border: 1.5px black solid;
+                border: 1.5px white solid;
                 margin: 0 0.75rem 0.5rem;
             }
             .active{
@@ -39,10 +41,10 @@
 
             .carousel-caption{
                 h5{
-                    color: black;
+                    color: white;
                 }
                 p{
-                    color: black;
+                    color: white;
                 }
             }
         }
@@ -50,6 +52,8 @@
 
         .carousel-inner{
             height: 500px;
+            width: 80%;
+            margin: 0 auto;
         }
 
         .carousel-control-prev{
@@ -100,8 +104,9 @@
     }
 }
 
-@media screen and (max-width: 45em) {
-	.box {
-		width: 100%;
-	}
+@include md{
+    .carousel-block{
+        max-width: 90% !important;
+        margin: 5rem auto;
+    }
 }

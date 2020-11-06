@@ -1,8 +1,3 @@
-@font-face {
-	font-family: 'Valorant';
-	src: url('../font/Valorant\ Font.ttf')  format('truetype');
-}
-
 #home{
     padding-top: 75px;
     min-height: 80vh;
@@ -35,8 +30,9 @@
             text-align: center;
             color: $bleu;            
             font-size: 5rem;
-            font-family: 'Valorant', Fallback, sans-serif;
+            font-family: 'Montserrat', Fallback, sans-serif;
             letter-spacing: 2px;
+            text-transform: uppercase;
         }
 
         .divider{
@@ -140,7 +136,7 @@
                     & span.text {
                         font-size: 2rem;
                         color: #fc7420;
-                        font-family: 'Valorant';
+                        font-family: 'Montserrat', Fallback, sans-serif;
                         font-weight: 600;
                         z-index: 4;
                         width: 100%;

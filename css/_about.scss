@@ -1,64 +1,42 @@
 #about{
-    padding: 0;
+    padding-top: 75px;
 
     h2{
         font-size: 4.5rem;
     }
-
-    .coach-img{
+    /*
+    .portrait{
         width: 75%;
         margin-top: 2.5rem;
         height: auto;
         box-shadow: 0 .5rem 1rem rgba(255, 255, 255, 0.25)!important;
     }
-
-    .coach-desc{
-        background-color: #F1ECE6;
+    */
+    .description{
+        background-color: $box-background; /*#F1ECE6*/
         border-radius: 5px;
         box-shadow: 0 .5rem 1rem rgba(255, 255, 255, 0.25)!important;
         margin: 2rem;
 
-        .title-part{
-            font-size: 2.75rem;
-            font-weight: 900;
-            color: black;
-            margin: 0;
-        }
-        h3{
-            font-size: 2.2rem;
-            text-align: center;
-            color: black;
-
-            em{
-                font-size: 1.8rem;
-                text-align: center;
-                color: black;
-            }
-        }
-        h4{
-            font-size: 2rem;
-            font-style: italic;
-            color: black;
-        }
         p{
             font-size: 1.8rem;
             line-height: 2rem;
             word-spacing: 4px;
-            color: black;
             margin-bottom: 2rem;
         }
         i{
-            color: #3C3C3C;
+            color: $bleu;
             font-size: 2rem;
-            margin: 2rem;
+            margin: 2rem 2rem 0 2rem;
+
+            &:hover{
+                color: white;
+            }
         }
     }
 
    
 
-    @include xs {
-        
-    }
 
     @include md{
         .md-column{

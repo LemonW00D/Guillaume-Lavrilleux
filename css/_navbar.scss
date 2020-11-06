@@ -1,10 +1,5 @@
 @import url("https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css");
 
-@font-face {
-	font-family: 'Valorant';
-	src: url('../font/Valorant\ Font.ttf')  format('truetype');
-}
-
 nav {
   padding: 0;
   margin: 0;
@@ -68,8 +63,9 @@ nav {
   .nav-link{
     color: #BBBBBB;
     font-weight: 700;
-    font-size: 2rem;
-    font-family: 'Valorant';
+    font-size: 2.25rem;
+    font-family: 'Montserrat', Fallback, sans-serif;
+    text-transform: uppercase;
     position: relative;
     text-align: center;
     width: 130px;

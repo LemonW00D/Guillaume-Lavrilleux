@@ -68,7 +68,7 @@
 		var simulationFn = function(instance) {
 			var progress = 0,
 				interval = setInterval( function() {
-					progress = Math.min( progress + Math.random() * 0.025, 1 ); /*0.025, 1*/
+					progress = Math.min( progress + Math.random() * 0.125, 1 ); /*0.025, 1*/
 
 					instance.setProgress( progress );
 
@@ -139,9 +139,9 @@
 		var siriWave = new SiriWave({
 			container: document.getElementById('wavebg2'),
 			//cover: true,
-			speed: 0.01,
+			speed: 0.0075,
 			color: '#fc7420',
-			frequency: 3,
+			frequency: 4,
 			amplitude: 0.9,
 			autostart: true
 		});
@@ -159,9 +159,9 @@
 		var siriWave = new SiriWave({
 			container: document.getElementById('wavebg3'),
 			//cover: true,
-			speed: 0.01,
+			speed: 0.005,
 			color: '#fc7420',
-			frequency: 3,
+			frequency: 5,
 			amplitude: 0.9,
 			autostart: true
 		});
@@ -216,7 +216,7 @@ $('.contact-nav').click(function () {
 });
 
 
-/* NAVBAR SOUND */
+/* NAVBAR SOUND 
 $(".nav-item")
   .each(function(i) {
     if (i != 0) { 
@@ -231,24 +231,25 @@ $(".nav-item")
     $("#beep-two" + $(this).data("beeper"))[0].play();
   });
 $("#beep-two").attr("id", "beep-two0");
+*/
 
 
-
-/* MUTE BUTTON ANIMATION */
+/* MUTE BUTTON ANIMATION 
 $('#sound-button').click(function() {
     $("i", this).toggleClass("fas fa-volume-mute fas fa-volume-up");
 });
-
+*/
 
 /* MUTE BUTTON ACTIVATION */
-/* son muted au chargement */
+/* son muted au chargement 
 $(function(){
     jQuery(document).ready(function () {
 		$("audio").prop("muted", true);
 	});
 });
+*/
 
-/* bouton toggle mute/unmute sound */
+/* bouton toggle mute/unmute sound 
 $(function(){
     jQuery('#sound-button').click(function () {
         if( $("audio").prop('muted') ) {
@@ -258,7 +259,7 @@ $(function(){
 	  }
     });
 });
-
+*/
 
 
 /* AOS PROPERTIES */
