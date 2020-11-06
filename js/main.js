@@ -119,9 +119,9 @@
 		var siriWave = new SiriWave({
 			container: document.getElementById('wavebg1'),
 			//cover: true,
-			speed: 0.01,
+			speed: 0.0075,
 			color: '#fc7420',
-			frequency: 3,
+			frequency: 4,
 			amplitude: 0.9,
 			autostart: true
 		});
@@ -159,9 +159,9 @@
 		var siriWave = new SiriWave({
 			container: document.getElementById('wavebg3'),
 			//cover: true,
-			speed: 0.005,
+			speed: 0.0075,
 			color: '#fc7420',
-			frequency: 5,
+			frequency: 4,
 			amplitude: 0.9,
 			autostart: true
 		});
