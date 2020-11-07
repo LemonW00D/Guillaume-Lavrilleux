@@ -41,8 +41,20 @@
                 max-width: auto;
             }
 
+            .lucine, .capsciences, .description{
+                font-size: 1.65rem;
+                padding: 0 2rem;
+                padding-bottom: 8rem;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+            }
+
             .description{
                 height: 80%;
+                padding-top: 4rem;
             }
 
             .carousel-caption{
@@ -59,6 +71,7 @@
 
             img{
                 border-radius: 5px 5px 0 0;
+                max-width: 100% !important;
             }
         }
         
@@ -69,7 +82,7 @@
 
 
         .carousel-inner{
-            height: 500px;
+            min-height: 500px;
             width: 100%;
             margin: 0 auto;
         }
@@ -124,6 +137,12 @@
     }
 }
 
+@include xxl{
+    .carousel-block{
+        max-width: 70% !important;
+    }
+}
+
 @include xl{
     .carousel-block{
         max-width: 65% !important;
@@ -147,5 +166,20 @@
     }
     .carousel-control-next, .carousel-control-prev{
         display: none !important;
+    }
+    .orientation{
+        flex-direction: column !important;
+    }
+    .carousel-inner{
+        max-height: 850px !important;
+        min-height: 500px !important;
+    }
+    .capsciences, .lucine{
+        padding-top: 2rem !important;
+    }
+    .carousel-item{
+        img{
+            max-width: 240px;
+        }
     }
 }
