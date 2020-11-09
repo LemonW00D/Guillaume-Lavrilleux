@@ -309,13 +309,13 @@ jQuery(document).ready(function($) {
 
 /* EMAILJS */
 (function(){
-  emailjs.init('USER-ID');
+  emailjs.init('user_nGfb6Np0IDZuuJtiA8fcy');
 })();
 
 window.onload = function() {
   document.getElementById('contact-form').addEventListener('submit', function(event) {
       event.preventDefault();
-      emailjs.sendForm('SERVICE', 'TEMPLATE', this);
+      emailjs.sendForm('service_og7xna9', 'template_ns0ryt9', this);
       alert("Votre message a bien été envoyé !");
       const form = document.getElementById("contact-form");
       form.reset();

@@ -41,8 +41,27 @@
                 max-width: auto;
             }
 
+            .caption-right{
+                left: 42.5%;
+                right: 0;
+                margin: auto;
+            }
+
+            .orientation{
+                img{
+                    max-width: 50%;
+                    margin: auto auto auto 0;
+                }
+                p{
+                    width: 50%;
+                }
+                .img-cap{
+                    max-width: 295px;
+                }
+            }
+
             .lucine, .capsciences, .description{
-                font-size: 1.65rem;
+                font-size: 2rem;
                 padding: 0 2rem;
                 padding-bottom: 8rem;
                 top: 0;
@@ -59,10 +78,14 @@
 
             .carousel-caption{
                 h5{
-                    color: white;
+                    a{
+                        color: white;
+                        font-size: 1.75rem;
+                    }
                 }
                 p{
                     color: white;
+                    font-size: 1.55rem;
                 }
             }
         }
@@ -78,11 +101,21 @@
         .title{
             position: static;
             bottom: 0;
+            h5{
+                a{
+                    color: white;
+                    font-size: 1.75rem;
+                }
+            }
+            p{
+                color: white;
+                font-size: 1.55rem;
+            }
         }
 
 
         .carousel-inner{
-            min-height: 500px;
+            min-height:430px;
             width: 100%;
             margin: 0 auto;
         }
@@ -156,6 +189,28 @@
     }
     .carousel-control-next, .carousel-control-prev{
         display: none !important;
+    }
+    .carousel-item{
+        img{
+            max-height: 501px;
+            max-width: auto;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+    }
+    .orientation{
+        img{
+            width: 100% !important;
+        }
+        p{
+            width: 100% !important;
+        }
+    }
+    .caption-right{
+        left: 0;
+        right: 0;
+        margin: 0;
     }
 }
 

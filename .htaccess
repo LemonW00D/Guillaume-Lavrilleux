@@ -1,6 +1,6 @@
 RewriteEngine On
 RewriteCond %{SERVER_PORT} 80
-RewriteRule ^(.*)$ https://www.kirolasante.fr/$1 [R,L]
+RewriteRule ^(.*)$ https://www.guillaumelavrilleux.com/$1 [R,L]
 
 
 <IfModule mod_expires.c>

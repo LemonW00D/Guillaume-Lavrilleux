@@ -5,12 +5,22 @@
 /* Large desktop */
 /* Very large desktop */
 @import url("https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css");
+@font-face {
+  font-family: 'Heading-thin';
+  src: url("../fonts/Heading-Pro-Thin-trial.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Euro';
+  src: url("../fonts/eurof55.ttf") format("truetype");
+}
+
 *, html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6, a {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Euro', sans-serif;
   color: #fff;
 }
 
@@ -25,7 +35,7 @@
           box-sizing: border-box;
   font-size: 62.5%;
   /* 1rem = 10px => facile à calculer !! */
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Euro', sans-serif;
 }
 
 html, body {
@@ -40,7 +50,7 @@ html, body {
   padding: 0;
   scroll-behavior: smooth;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Euro', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -49,6 +59,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 1rem 0;
   display: block;
   text-align: center;
+  font-family: 'Heading-light' !important;
 }
 
 h1 {
@@ -572,6 +583,11 @@ section {
     }
 }
 */
+@font-face {
+  font-family: 'Heading-light';
+  src: url("../fonts/Heading-Pro-Light-trial.ttf") format("truetype");
+}
+
 nav {
   padding: 0;
   margin: 0;
@@ -639,8 +655,8 @@ nav {
 .nav-item .nav-link {
   color: #BBBBBB;
   font-weight: 700;
-  font-size: 2.25rem;
-  font-family: 'Montserrat', Fallback, sans-serif;
+  font-size: 3rem;
+  font-family: 'Heading-light';
   text-transform: uppercase;
   position: relative;
   text-align: center;
@@ -810,7 +826,15 @@ nav {
 
 @media screen and (max-width: 992px) {
   .social-nav {
-    display: none;
+    position: fixed;
+    top: 1.25rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    margin-left: 56px;
+  }
+  .social-nav ul li i {
+    color: black;
   }
   .computer {
     display: none;
@@ -939,6 +963,7 @@ nav {
   line-height: 4rem;
   padding: 2rem 0;
   margin: 0 1rem;
+  text-align: center;
 }
 
 #home .title .button-contact {
@@ -1088,6 +1113,10 @@ nav {
   z-index: 999;
 }
 
+#home .video h2 {
+  font-size: 3.5rem;
+}
+
 @media screen and (max-width: 768px) {
   #home .home-box {
     -webkit-box-orient: vertical;
@@ -1097,12 +1126,23 @@ nav {
     margin: 0 1rem 6rem;
   }
   #home .title {
-    margin-top: 4rem;
+    margin-top: 0rem;
     width: 100%;
+  }
+  #home .divider {
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+  }
+  #home .button-contact {
+    margin-top: 3rem !important;
+  }
+  #home .description p {
+    text-align: center;
   }
   #home .video {
     width: 100%;
     margin-left: 0;
+    margin-top: 5rem !important;
   }
 }
 
@@ -1251,7 +1291,7 @@ nav {
 }
 
 #about .description p {
-  font-size: 1.8rem;
+  font-size: 2rem;
   line-height: 2rem;
   word-spacing: 4px;
   margin-bottom: 2rem;
@@ -1263,7 +1303,7 @@ nav {
 }
 
 #about .description i {
-  color: #13c9d7;
+  color: #fc7420;
   font-size: 2rem;
   margin: 2rem 2rem 0 2rem;
 }
@@ -1326,8 +1366,27 @@ nav {
   max-width: auto;
 }
 
+#works #carouselWorks .carousel-item .caption-right {
+  left: 42.5%;
+  right: 0;
+  margin: auto;
+}
+
+#works #carouselWorks .carousel-item .orientation img {
+  max-width: 50%;
+  margin: auto auto auto 0;
+}
+
+#works #carouselWorks .carousel-item .orientation p {
+  width: 50%;
+}
+
+#works #carouselWorks .carousel-item .orientation .img-cap {
+  max-width: 295px;
+}
+
 #works #carouselWorks .carousel-item .lucine, #works #carouselWorks .carousel-item .capsciences, #works #carouselWorks .carousel-item .description {
-  font-size: 1.65rem;
+  font-size: 2rem;
   padding: 0 2rem;
   padding-bottom: 8rem;
   top: 0;
@@ -1342,12 +1401,14 @@ nav {
   padding-top: 4rem;
 }
 
-#works #carouselWorks .carousel-item .carousel-caption h5 {
+#works #carouselWorks .carousel-item .carousel-caption h5 a {
   color: white;
+  font-size: 1.75rem;
 }
 
 #works #carouselWorks .carousel-item .carousel-caption p {
   color: white;
+  font-size: 1.55rem;
 }
 
 #works #carouselWorks .paysage {
@@ -1364,8 +1425,18 @@ nav {
   bottom: 0;
 }
 
+#works #carouselWorks .title h5 a {
+  color: white;
+  font-size: 1.75rem;
+}
+
+#works #carouselWorks .title p {
+  color: white;
+  font-size: 1.55rem;
+}
+
 #works #carouselWorks .carousel-inner {
-  min-height: 500px;
+  min-height: 430px;
   width: 100%;
   margin: 0 auto;
 }
@@ -1452,6 +1523,24 @@ nav {
   .carousel-control-next, .carousel-control-prev {
     display: none !important;
   }
+  .carousel-item img {
+    max-height: 501px;
+    max-width: auto;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  .orientation img {
+    width: 100% !important;
+  }
+  .orientation p {
+    width: 100% !important;
+  }
+  .caption-right {
+    left: 0;
+    right: 0;
+    margin: 0;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -1484,16 +1573,16 @@ nav {
   20% {
   }
   40% {
-    height: 25px;
+    height: 5px;
   }
   60% {
-    height: 6px;
+    height: 36px;
   }
   80% {
-    height: 38px;
+    height: 16px;
   }
   100% {
-    height: 10px;
+    height: 19px;
   }
 }
 
@@ -1501,16 +1590,16 @@ nav {
   20% {
   }
   40% {
-    height: 42px;
+    height: 38px;
   }
   60% {
-    height: 17px;
+    height: 28px;
   }
   80% {
-    height: 50px;
+    height: 35px;
   }
   100% {
-    height: 40px;
+    height: 8px;
   }
 }
 
@@ -1518,16 +1607,16 @@ nav {
   20% {
   }
   40% {
-    height: 5px;
+    height: 43px;
   }
   60% {
-    height: 33px;
+    height: 15px;
   }
   80% {
-    height: 18px;
+    height: 9px;
   }
   100% {
-    height: 36px;
+    height: 30px;
   }
 }
 
@@ -1535,16 +1624,16 @@ nav {
   20% {
   }
   40% {
-    height: 45px;
-  }
-  60% {
     height: 38px;
   }
+  60% {
+    height: 27px;
+  }
   80% {
-    height: 36px;
+    height: 18px;
   }
   100% {
-    height: 37px;
+    height: 46px;
   }
 }
 
@@ -1552,16 +1641,16 @@ nav {
   20% {
   }
   40% {
-    height: 2px;
+    height: 33px;
   }
   60% {
-    height: 25px;
+    height: 37px;
   }
   80% {
-    height: 18px;
+    height: 1px;
   }
   100% {
-    height: 24px;
+    height: 50px;
   }
 }
 
@@ -1569,16 +1658,16 @@ nav {
   20% {
   }
   40% {
-    height: 19px;
+    height: 22px;
   }
   60% {
     height: 44px;
   }
   80% {
-    height: 18px;
+    height: 50px;
   }
   100% {
-    height: 28px;
+    height: 34px;
   }
 }
 
@@ -1586,16 +1675,16 @@ nav {
   20% {
   }
   40% {
-    height: 48px;
+    height: 23px;
   }
   60% {
-    height: 42px;
+    height: 6px;
   }
   80% {
-    height: 35px;
+    height: 18px;
   }
   100% {
-    height: 11px;
+    height: 6px;
   }
 }
 
@@ -1603,16 +1692,16 @@ nav {
   20% {
   }
   40% {
-    height: 49px;
+    height: 12px;
   }
   60% {
-    height: 23px;
+    height: 8px;
   }
   80% {
-    height: 41px;
+    height: 26px;
   }
   100% {
-    height: 7px;
+    height: 8px;
   }
 }
 
@@ -1620,16 +1709,16 @@ nav {
   20% {
   }
   40% {
-    height: 38px;
+    height: 41px;
   }
   60% {
-    height: 12px;
+    height: 35px;
   }
   80% {
-    height: 8px;
+    height: 47px;
   }
   100% {
-    height: 48px;
+    height: 25px;
   }
 }
 
@@ -1637,16 +1726,16 @@ nav {
   20% {
   }
   40% {
-    height: 49px;
+    height: 10px;
   }
   60% {
-    height: 36px;
+    height: 37px;
   }
   80% {
-    height: 41px;
+    height: 31px;
   }
   100% {
-    height: 23px;
+    height: 32px;
   }
 }
 
@@ -1654,16 +1743,16 @@ nav {
   20% {
   }
   40% {
-    height: 19px;
+    height: 21px;
   }
   60% {
-    height: 32px;
-  }
-  80% {
     height: 47px;
   }
+  80% {
+    height: 1px;
+  }
   100% {
-    height: 8px;
+    height: 46px;
   }
 }
 
@@ -1671,16 +1760,16 @@ nav {
   20% {
   }
   40% {
-    height: 29px;
+    height: 26px;
   }
   60% {
-    height: 23px;
+    height: 35px;
   }
   80% {
-    height: 11px;
+    height: 21px;
   }
   100% {
-    height: 29px;
+    height: 47px;
   }
 }
 
@@ -1688,16 +1777,16 @@ nav {
   20% {
   }
   40% {
-    height: 44px;
+    height: 38px;
   }
   60% {
-    height: 36px;
+    height: 49px;
   }
   80% {
-    height: 48px;
+    height: 1px;
   }
   100% {
-    height: 19px;
+    height: 27px;
   }
 }
 
@@ -1705,16 +1794,16 @@ nav {
   20% {
   }
   40% {
-    height: 46px;
+    height: 45px;
   }
   60% {
-    height: 46px;
+    height: 6px;
   }
   80% {
-    height: 19px;
+    height: 9px;
   }
   100% {
-    height: 13px;
+    height: 47px;
   }
 }
 
@@ -1722,16 +1811,16 @@ nav {
   20% {
   }
   40% {
-    height: 37px;
+    height: 45px;
   }
   60% {
-    height: 27px;
+    height: 34px;
   }
   80% {
-    height: 21px;
+    height: 15px;
   }
   100% {
-    height: 39px;
+    height: 11px;
   }
 }
 
@@ -1739,16 +1828,16 @@ nav {
   20% {
   }
   40% {
-    height: 10px;
+    height: 44px;
   }
   60% {
-    height: 35px;
+    height: 49px;
   }
   80% {
-    height: 29px;
+    height: 25px;
   }
   100% {
-    height: 8px;
+    height: 37px;
   }
 }
 
@@ -1756,16 +1845,16 @@ nav {
   20% {
   }
   40% {
-    height: 32px;
+    height: 1px;
   }
   60% {
     height: 18px;
   }
   80% {
-    height: 41px;
+    height: 26px;
   }
   100% {
-    height: 18px;
+    height: 21px;
   }
 }
 
@@ -1773,16 +1862,16 @@ nav {
   20% {
   }
   40% {
-    height: 43px;
+    height: 4px;
   }
   60% {
-    height: 24px;
+    height: 39px;
   }
   80% {
-    height: 31px;
+    height: 7px;
   }
   100% {
-    height: 15px;
+    height: 3px;
   }
 }
 
@@ -1790,16 +1879,16 @@ nav {
   20% {
   }
   40% {
-    height: 21px;
-  }
-  60% {
     height: 47px;
   }
+  60% {
+    height: 44px;
+  }
   80% {
-    height: 36px;
+    height: 32px;
   }
   100% {
-    height: 36px;
+    height: 14px;
   }
 }
 
@@ -1807,16 +1896,16 @@ nav {
   20% {
   }
   40% {
-    height: 26px;
+    height: 36px;
   }
   60% {
-    height: 23px;
+    height: 29px;
   }
   80% {
-    height: 3px;
+    height: 16px;
   }
   100% {
-    height: 14px;
+    height: 2px;
   }
 }
 
@@ -1855,63 +1944,63 @@ nav {
 }
 
 #equalizer #levels .level.level1:after {
-  height: 23px;
-  -webkit-animation: pump-it-up1 6269ms linear infinite alternate;
-          animation: pump-it-up1 6269ms linear infinite alternate;
+  height: 30px;
+  -webkit-animation: pump-it-up1 6307ms linear infinite alternate;
+          animation: pump-it-up1 6307ms linear infinite alternate;
 }
 
 #equalizer #levels .level.level2:after {
-  height: 10px;
-  -webkit-animation: pump-it-up2 6949ms linear infinite alternate;
-          animation: pump-it-up2 6949ms linear infinite alternate;
+  height: 50px;
+  -webkit-animation: pump-it-up2 6030ms linear infinite alternate;
+          animation: pump-it-up2 6030ms linear infinite alternate;
 }
 
 #equalizer #levels .level.level3:after {
-  height: 47px;
-  -webkit-animation: pump-it-up3 2471ms linear infinite alternate;
-          animation: pump-it-up3 2471ms linear infinite alternate;
+  height: 25px;
+  -webkit-animation: pump-it-up3 3177ms linear infinite alternate;
+          animation: pump-it-up3 3177ms linear infinite alternate;
 }
 
 #equalizer #levels .level.level4:after {
-  height: 44px;
-  -webkit-animation: pump-it-up4 5635ms linear infinite alternate;
-          animation: pump-it-up4 5635ms linear infinite alternate;
+  height: 20px;
+  -webkit-animation: pump-it-up4 4608ms linear infinite alternate;
+          animation: pump-it-up4 4608ms linear infinite alternate;
 }
 
 #equalizer #levels .level.level5:after {
-  height: 7px;
-  -webkit-animation: pump-it-up5 6861ms linear infinite alternate;
-          animation: pump-it-up5 6861ms linear infinite alternate;
+  height: 26px;
+  -webkit-animation: pump-it-up5 5885ms linear infinite alternate;
+          animation: pump-it-up5 5885ms linear infinite alternate;
 }
 
 #equalizer #levels .level.level6:after {
-  height: 43px;
-  -webkit-animation: pump-it-up6 5169ms linear infinite alternate;
-          animation: pump-it-up6 5169ms linear infinite alternate;
+  height: 4px;
+  -webkit-animation: pump-it-up6 4726ms linear infinite alternate;
+          animation: pump-it-up6 4726ms linear infinite alternate;
 }
 
 #equalizer #levels .level.level7:after {
-  height: 18px;
-  -webkit-animation: pump-it-up7 5523ms linear infinite alternate;
-          animation: pump-it-up7 5523ms linear infinite alternate;
+  height: 22px;
+  -webkit-animation: pump-it-up7 2649ms linear infinite alternate;
+          animation: pump-it-up7 2649ms linear infinite alternate;
 }
 
 #equalizer #levels .level.level8:after {
-  height: 29px;
-  -webkit-animation: pump-it-up8 3846ms linear infinite alternate;
-          animation: pump-it-up8 3846ms linear infinite alternate;
+  height: 2px;
+  -webkit-animation: pump-it-up8 6168ms linear infinite alternate;
+          animation: pump-it-up8 6168ms linear infinite alternate;
 }
 
 #equalizer #levels .level.level9:after {
-  height: 23px;
-  -webkit-animation: pump-it-up9 6762ms linear infinite alternate;
-          animation: pump-it-up9 6762ms linear infinite alternate;
+  height: 10px;
+  -webkit-animation: pump-it-up9 3561ms linear infinite alternate;
+          animation: pump-it-up9 3561ms linear infinite alternate;
 }
 
 #equalizer #levels .level.level10:after {
-  height: 27px;
-  -webkit-animation: pump-it-up10 2738ms linear infinite alternate;
-          animation: pump-it-up10 2738ms linear infinite alternate;
+  height: 6px;
+  -webkit-animation: pump-it-up10 6344ms linear infinite alternate;
+          animation: pump-it-up10 6344ms linear infinite alternate;
 }
 
 #contact {
@@ -1972,7 +2061,7 @@ nav {
 }
 
 #contact .contact-form-container .contact-me .contact-header h2 {
-  font-size: 1.75rem;
+  font-size: 2.25rem;
   margin: 0;
   padding: 0;
 }
@@ -2177,12 +2266,12 @@ footer .footer-nav i:hover {
 .copyright p {
   text-align: center;
   margin: 0;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   color: #F3F2EF;
 }
 
 .copyright .dev {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   color: #F3F2EF;
 }
 

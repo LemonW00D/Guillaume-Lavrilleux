@@ -1,8 +1,18 @@
+@font-face {
+    font-family: 'Heading-thin';
+    src:  url('../fonts/Heading-Pro-Thin-trial.ttf') format('truetype'),
+}
+@font-face {
+    font-family: 'Euro';
+    src:  url('../fonts/eurof55.ttf') format('truetype'),
+}
+
+
 *,html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6,a{
     margin:0;
     padding:0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;    
+    font-family: 'Euro', sans-serif;    
     color: #fff;
 }
 
@@ -24,7 +34,7 @@ $box-background: #242526;
     scroll-behavior: smooth;
     box-sizing: border-box;
     font-size: 62.5%;   /* 1rem = 10px => facile à calculer !! */
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Euro', sans-serif;
 }
 
 html, body{
@@ -38,7 +48,7 @@ html, body{
     padding:0;
     scroll-behavior: smooth;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Euro', sans-serif;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -47,6 +57,7 @@ h1,h2,h3,h4,h5,h6{
     margin: 1rem 0;
     display: block;
     text-align: center;
+    font-family: 'Heading-light' !important;
 }
 
 h1{

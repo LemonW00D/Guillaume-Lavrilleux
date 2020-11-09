@@ -1,5 +1,11 @@
 @import url("https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css");
 
+@font-face {
+  font-family: 'Heading-light';
+  src:  url('../fonts/Heading-Pro-Light-trial.ttf') format('truetype'),
+}
+
+
 nav {
   padding: 0;
   margin: 0;
@@ -63,8 +69,8 @@ nav {
   .nav-link{
     color: #BBBBBB;
     font-weight: 700;
-    font-size: 2.25rem;
-    font-family: 'Montserrat', Fallback, sans-serif;
+    font-size: 3rem;
+    font-family: 'Heading-light';
     text-transform: uppercase;
     position: relative;
     text-align: center;
@@ -242,7 +248,16 @@ nav {
 
 @include md {
   .social-nav{
-    display: none;
+    position: fixed;
+    top: 1.25rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    margin-left: 56px;
+
+    ul li i{
+      color: black;
+    }
   }
   .computer{
     display: none;

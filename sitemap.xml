@@ -1,44 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
    <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
    <url>
-      <loc>http://www.kirolasante.fr</loc>
-      <lastmod>2020-10-01</lastmod>
+      <loc>https://www.guillaumelavrilleux.com</loc>
+      <lastmod>2020-11-09</lastmod>
       <changefreq>monthly</changefreq>
       <priority>1</priority>
    </url>
    <url>
-      <loc>https://www.kirolasante.fr/#header</loc>
-      <lastmod>2020-10-01</lastmod>
+      <loc>https://www.guillaumelavrilleux.com/#home</loc>
+      <lastmod>2020-11-09</lastmod>
       <changefreq>monthly</changefreq>
       <priority>1</priority>
    </url>
    <url>
-      <loc>https://www.kirolasante.fr/#coach</loc>
-      <lastmod>2020-10-01</lastmod>
+      <loc>https://www.guillaumelavrilleux.com/#about</loc>
+      <lastmod>2020-11-09</lastmod>
       <changefreq>monthly</changefreq>
       <priority>1</priority>
    </url>
    <url>
-      <loc>https://www.kirolasante.fr/#seniors</loc>
-      <lastmod>2020-10-01</lastmod>
+      <loc>https://www.guillaumelavrilleux.com/#works</loc>
+      <lastmod>2020-11-09</lastmod>
       <changefreq>monthly</changefreq>
       <priority>1</priority>
    </url>
    <url>
-      <loc>https://www.kirolasante.fr/#juniors</loc>
-      <lastmod>2020-10-01</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>1</priority>
-   </url>
-   <url>
-      <loc>https://www.kirolasante.fr/#prices</loc>
-      <lastmod>2020-10-01</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>1</priority>
-   </url>
-   <url>
-      <loc>https://www.kirolasante.fr/#contact</loc>
-      <lastmod>2020-10-01</lastmod>
+      <loc>https://www.guillaumelavrilleux.com/#contact</loc>
+      <lastmod>2020-11-09</lastmod>
       <changefreq>monthly</changefreq>
       <priority>1</priority>
    </url>
