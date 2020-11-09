@@ -20,6 +20,10 @@ RewriteRule ^(.*)$ https://www.guillaumelavrilleux.com/$1 [R,L]
   ExpiresByType video/mp4 "access plus 1 year"
   ExpiresByType video/mpeg "access plus 1 year"
 
+  # Audio
+  ExpiresByType audio/ogg "access plus 1 year"
+  ExpiresByType audio/mp3 "access plus 1 year"
+
   # Fonts
   ExpiresByType font/ttf "access plus 1 year"
   ExpiresByType font/otf "access plus 1 year"
