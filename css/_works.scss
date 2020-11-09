@@ -42,7 +42,7 @@
             }
 
             .caption-right{
-                left: 42.5%;
+                left: 50%;
                 right: 0;
                 margin: auto;
             }
@@ -90,7 +90,7 @@
             }
         }
         .paysage{
-            height: 500px !important;
+            height: 500px;
 
             img{
                 border-radius: 5px 5px 0 0;
@@ -192,11 +192,12 @@
     }
     .carousel-item{
         img{
-            max-height: 501px;
-            max-width: auto;
-            left: 0;
-            right: 0;
-            margin: auto;
+            max-height: auto !important;
+            max-width: 100% !important;
+            left: 0 !important;
+            right: 0 !important;
+            margin: auto !important;
+            border-radius: 5px 5px 0 0 !important;
         }
     }
     .orientation{
@@ -214,6 +215,17 @@
     }
 }
 
+@include sm{
+    .carousel-inner{
+        min-height:300px !important;
+        width: 100% !important;
+        margin: 0 auto !important;
+    }
+    .paysage{
+        min-height: 300px !important;
+    }
+}
+
 @include xs{
     .carousel-block{
         max-width: 90% !important;
@@ -227,7 +239,7 @@
     }
     .carousel-inner{
         max-height: 850px !important;
-        min-height: 500px !important;
+        min-height: 400px !important;
     }
     .capsciences, .lucine{
         padding-top: 2rem !important;

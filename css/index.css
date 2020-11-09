@@ -1367,7 +1367,7 @@ nav {
 }
 
 #works #carouselWorks .carousel-item .caption-right {
-  left: 42.5%;
+  left: 50%;
   right: 0;
   margin: auto;
 }
@@ -1412,7 +1412,7 @@ nav {
 }
 
 #works #carouselWorks .paysage {
-  height: 500px !important;
+  height: 500px;
 }
 
 #works #carouselWorks .paysage img {
@@ -1524,11 +1524,12 @@ nav {
     display: none !important;
   }
   .carousel-item img {
-    max-height: 501px;
-    max-width: auto;
-    left: 0;
-    right: 0;
-    margin: auto;
+    max-height: auto !important;
+    max-width: 100% !important;
+    left: 0 !important;
+    right: 0 !important;
+    margin: auto !important;
+    border-radius: 5px 5px 0 0 !important;
   }
   .orientation img {
     width: 100% !important;
@@ -1540,6 +1541,17 @@ nav {
     left: 0;
     right: 0;
     margin: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .carousel-inner {
+    min-height: 300px !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+  }
+  .paysage {
+    min-height: 300px !important;
   }
 }
 
@@ -1559,7 +1571,7 @@ nav {
   }
   .carousel-inner {
     max-height: 850px !important;
-    min-height: 500px !important;
+    min-height: 400px !important;
   }
   .capsciences, .lucine {
     padding-top: 2rem !important;
@@ -1573,16 +1585,16 @@ nav {
   20% {
   }
   40% {
-    height: 5px;
+    height: 21px;
   }
   60% {
-    height: 36px;
+    height: 9px;
   }
   80% {
-    height: 16px;
+    height: 40px;
   }
   100% {
-    height: 19px;
+    height: 16px;
   }
 }
 
@@ -1590,16 +1602,16 @@ nav {
   20% {
   }
   40% {
-    height: 38px;
+    height: 8px;
   }
   60% {
-    height: 28px;
+    height: 5px;
   }
   80% {
-    height: 35px;
+    height: 13px;
   }
   100% {
-    height: 8px;
+    height: 40px;
   }
 }
 
@@ -1607,16 +1619,16 @@ nav {
   20% {
   }
   40% {
-    height: 43px;
+    height: 2px;
   }
   60% {
-    height: 15px;
+    height: 47px;
   }
   80% {
-    height: 9px;
+    height: 35px;
   }
   100% {
-    height: 30px;
+    height: 29px;
   }
 }
 
@@ -1624,16 +1636,16 @@ nav {
   20% {
   }
   40% {
-    height: 38px;
+    height: 30px;
   }
   60% {
-    height: 27px;
+    height: 11px;
   }
   80% {
-    height: 18px;
+    height: 47px;
   }
   100% {
-    height: 46px;
+    height: 41px;
   }
 }
 
@@ -1641,16 +1653,16 @@ nav {
   20% {
   }
   40% {
-    height: 33px;
+    height: 47px;
   }
   60% {
-    height: 37px;
+    height: 4px;
   }
   80% {
-    height: 1px;
+    height: 18px;
   }
   100% {
-    height: 50px;
+    height: 46px;
   }
 }
 
@@ -1658,16 +1670,16 @@ nav {
   20% {
   }
   40% {
-    height: 22px;
+    height: 37px;
   }
   60% {
-    height: 44px;
+    height: 39px;
   }
   80% {
-    height: 50px;
+    height: 17px;
   }
   100% {
-    height: 34px;
+    height: 50px;
   }
 }
 
@@ -1675,16 +1687,16 @@ nav {
   20% {
   }
   40% {
-    height: 23px;
+    height: 46px;
   }
   60% {
-    height: 6px;
+    height: 30px;
   }
   80% {
     height: 18px;
   }
   100% {
-    height: 6px;
+    height: 21px;
   }
 }
 
@@ -1692,16 +1704,16 @@ nav {
   20% {
   }
   40% {
-    height: 12px;
+    height: 15px;
   }
   60% {
-    height: 8px;
+    height: 28px;
   }
   80% {
-    height: 26px;
+    height: 32px;
   }
   100% {
-    height: 8px;
+    height: 48px;
   }
 }
 
@@ -1709,16 +1721,16 @@ nav {
   20% {
   }
   40% {
-    height: 41px;
+    height: 7px;
   }
   60% {
-    height: 35px;
+    height: 33px;
   }
   80% {
-    height: 47px;
+    height: 19px;
   }
   100% {
-    height: 25px;
+    height: 1px;
   }
 }
 
@@ -1726,16 +1738,16 @@ nav {
   20% {
   }
   40% {
-    height: 10px;
+    height: 29px;
   }
   60% {
-    height: 37px;
+    height: 26px;
   }
   80% {
-    height: 31px;
+    height: 6px;
   }
   100% {
-    height: 32px;
+    height: 14px;
   }
 }
 
@@ -1743,16 +1755,16 @@ nav {
   20% {
   }
   40% {
-    height: 21px;
+    height: 38px;
   }
   60% {
-    height: 47px;
+    height: 14px;
   }
   80% {
-    height: 1px;
+    height: 10px;
   }
   100% {
-    height: 46px;
+    height: 18px;
   }
 }
 
@@ -1760,16 +1772,16 @@ nav {
   20% {
   }
   40% {
-    height: 26px;
+    height: 9px;
   }
   60% {
-    height: 35px;
+    height: 24px;
   }
   80% {
-    height: 21px;
+    height: 20px;
   }
   100% {
-    height: 47px;
+    height: 39px;
   }
 }
 
@@ -1777,16 +1789,16 @@ nav {
   20% {
   }
   40% {
-    height: 38px;
+    height: 50px;
   }
   60% {
-    height: 49px;
+    height: 37px;
   }
   80% {
-    height: 1px;
+    height: 39px;
   }
   100% {
-    height: 27px;
+    height: 16px;
   }
 }
 
@@ -1794,16 +1806,16 @@ nav {
   20% {
   }
   40% {
-    height: 45px;
+    height: 34px;
   }
   60% {
-    height: 6px;
+    height: 41px;
   }
   80% {
-    height: 9px;
+    height: 14px;
   }
   100% {
-    height: 47px;
+    height: 9px;
   }
 }
 
@@ -1811,16 +1823,16 @@ nav {
   20% {
   }
   40% {
-    height: 45px;
+    height: 19px;
   }
   60% {
-    height: 34px;
+    height: 30px;
   }
   80% {
-    height: 15px;
+    height: 43px;
   }
   100% {
-    height: 11px;
+    height: 14px;
   }
 }
 
@@ -1828,16 +1840,16 @@ nav {
   20% {
   }
   40% {
-    height: 44px;
+    height: 10px;
   }
   60% {
-    height: 49px;
+    height: 4px;
   }
   80% {
     height: 25px;
   }
   100% {
-    height: 37px;
+    height: 18px;
   }
 }
 
@@ -1845,16 +1857,16 @@ nav {
   20% {
   }
   40% {
-    height: 1px;
+    height: 14px;
   }
   60% {
-    height: 18px;
+    height: 14px;
   }
   80% {
-    height: 26px;
+    height: 5px;
   }
   100% {
-    height: 21px;
+    height: 22px;
   }
 }
 
@@ -1862,16 +1874,16 @@ nav {
   20% {
   }
   40% {
-    height: 4px;
+    height: 25px;
   }
   60% {
-    height: 39px;
+    height: 25px;
   }
   80% {
-    height: 7px;
+    height: 44px;
   }
   100% {
-    height: 3px;
+    height: 7px;
   }
 }
 
@@ -1879,16 +1891,16 @@ nav {
   20% {
   }
   40% {
-    height: 47px;
+    height: 26px;
   }
   60% {
-    height: 44px;
+    height: 46px;
   }
   80% {
-    height: 32px;
+    height: 38px;
   }
   100% {
-    height: 14px;
+    height: 42px;
   }
 }
 
@@ -1896,16 +1908,16 @@ nav {
   20% {
   }
   40% {
-    height: 36px;
+    height: 39px;
   }
   60% {
-    height: 29px;
+    height: 33px;
   }
   80% {
-    height: 16px;
+    height: 48px;
   }
   100% {
-    height: 2px;
+    height: 25px;
   }
 }
 
@@ -1944,63 +1956,63 @@ nav {
 }
 
 #equalizer #levels .level.level1:after {
-  height: 30px;
-  -webkit-animation: pump-it-up1 6307ms linear infinite alternate;
-          animation: pump-it-up1 6307ms linear infinite alternate;
+  height: 39px;
+  -webkit-animation: pump-it-up1 6112ms linear infinite alternate;
+          animation: pump-it-up1 6112ms linear infinite alternate;
 }
 
 #equalizer #levels .level.level2:after {
-  height: 50px;
-  -webkit-animation: pump-it-up2 6030ms linear infinite alternate;
-          animation: pump-it-up2 6030ms linear infinite alternate;
+  height: 13px;
+  -webkit-animation: pump-it-up2 5962ms linear infinite alternate;
+          animation: pump-it-up2 5962ms linear infinite alternate;
 }
 
 #equalizer #levels .level.level3:after {
-  height: 25px;
-  -webkit-animation: pump-it-up3 3177ms linear infinite alternate;
-          animation: pump-it-up3 3177ms linear infinite alternate;
+  height: 26px;
+  -webkit-animation: pump-it-up3 6617ms linear infinite alternate;
+          animation: pump-it-up3 6617ms linear infinite alternate;
 }
 
 #equalizer #levels .level.level4:after {
-  height: 20px;
-  -webkit-animation: pump-it-up4 4608ms linear infinite alternate;
-          animation: pump-it-up4 4608ms linear infinite alternate;
+  height: 45px;
+  -webkit-animation: pump-it-up4 5254ms linear infinite alternate;
+          animation: pump-it-up4 5254ms linear infinite alternate;
 }
 
 #equalizer #levels .level.level5:after {
-  height: 26px;
-  -webkit-animation: pump-it-up5 5885ms linear infinite alternate;
-          animation: pump-it-up5 5885ms linear infinite alternate;
+  height: 22px;
+  -webkit-animation: pump-it-up5 5709ms linear infinite alternate;
+          animation: pump-it-up5 5709ms linear infinite alternate;
 }
 
 #equalizer #levels .level.level6:after {
-  height: 4px;
-  -webkit-animation: pump-it-up6 4726ms linear infinite alternate;
-          animation: pump-it-up6 4726ms linear infinite alternate;
+  height: 27px;
+  -webkit-animation: pump-it-up6 3986ms linear infinite alternate;
+          animation: pump-it-up6 3986ms linear infinite alternate;
 }
 
 #equalizer #levels .level.level7:after {
-  height: 22px;
-  -webkit-animation: pump-it-up7 2649ms linear infinite alternate;
-          animation: pump-it-up7 2649ms linear infinite alternate;
+  height: 48px;
+  -webkit-animation: pump-it-up7 4491ms linear infinite alternate;
+          animation: pump-it-up7 4491ms linear infinite alternate;
 }
 
 #equalizer #levels .level.level8:after {
-  height: 2px;
-  -webkit-animation: pump-it-up8 6168ms linear infinite alternate;
-          animation: pump-it-up8 6168ms linear infinite alternate;
+  height: 6px;
+  -webkit-animation: pump-it-up8 4038ms linear infinite alternate;
+          animation: pump-it-up8 4038ms linear infinite alternate;
 }
 
 #equalizer #levels .level.level9:after {
-  height: 10px;
-  -webkit-animation: pump-it-up9 3561ms linear infinite alternate;
-          animation: pump-it-up9 3561ms linear infinite alternate;
+  height: 3px;
+  -webkit-animation: pump-it-up9 3220ms linear infinite alternate;
+          animation: pump-it-up9 3220ms linear infinite alternate;
 }
 
 #equalizer #levels .level.level10:after {
-  height: 6px;
-  -webkit-animation: pump-it-up10 6344ms linear infinite alternate;
-          animation: pump-it-up10 6344ms linear infinite alternate;
+  height: 12px;
+  -webkit-animation: pump-it-up10 6989ms linear infinite alternate;
+          animation: pump-it-up10 6989ms linear infinite alternate;
 }
 
 #contact {
