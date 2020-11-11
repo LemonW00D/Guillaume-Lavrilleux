@@ -37,7 +37,7 @@
         .carousel-item{
             img{
                 border-radius: 5px 0 0 5px;
-                max-height: 501px;
+                max-height: 500px;
                 max-width: auto;
             }
 
@@ -90,11 +90,14 @@
             }
         }
         .paysage{
-            min-height: 500px;
+            height: 500px;
 
             img{
                 border-radius: 5px 5px 0 0;
                 max-width: 100% !important;
+            }
+            .description{
+                padding-bottom: 5rem;
             }
         }
         
@@ -175,6 +178,11 @@
     .carousel-block{
         max-width: 75% !important;
     }
+    .paysage{
+        .description{
+            padding-top: 3rem !important;
+        }
+    }
 }
 
 @include md{
@@ -220,7 +228,10 @@
         margin: 0 auto !important;
     }
     .paysage{
-        min-height: 300px !important;
+        min-height: 500px !important;
+    }
+    .lucine{
+        padding-top: 3rem !important;
     }
 }
 
