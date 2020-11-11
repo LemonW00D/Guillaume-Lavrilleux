@@ -7,7 +7,7 @@
     }
 
     .carousel-block{
-        max-width: 45%;
+        max-width: 775px;
         margin: 2rem auto;
         padding: 0 7.5rem;
     }
@@ -171,12 +171,6 @@
     }
 }
 
-@include xxl{
-    .carousel-block{
-        max-width: 70% !important;
-    }
-}
-
 @include xl{
     .carousel-block{
         max-width: 75% !important;
@@ -185,7 +179,7 @@
 
 @include md{
     .carousel-block{
-        max-width: 90% !important;
+        max-width: 650px !important;
         padding: 0 !important;
     }
     .carousel-control-next, .carousel-control-prev{
@@ -217,6 +211,9 @@
 }
 
 @include sm{
+    .carousel-block{
+        max-width: 90% !important;
+    }
     .carousel-inner{
         min-height:300px !important;
         width: 100% !important;
@@ -229,7 +226,8 @@
 
 @include xs{
     .carousel-block{
-        max-width: 90% !important;
+        max-width: 75% !important;
+        min-width: 300px !important;
         padding: 0 !important;
     }
     .carousel-control-next, .carousel-control-prev{
@@ -237,6 +235,13 @@
     }
     .orientation{
         flex-direction: column !important;
+        img{
+            width: auto !important;
+            height: auto !important;
+            left: 0 !important;
+            right: 0 !important;
+            margin: auto !important;
+        }
     }
     .carousel-inner{
         max-height: 850px !important;
